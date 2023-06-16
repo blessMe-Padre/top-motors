@@ -1,0 +1,51 @@
+.contact {
+    font-weight: 700;
+
+    span {
+        @include vp-1200 {
+            display: none;
+        }
+    }
+}
+
+.contact a {
+    color: $color-default-white;
+    font-size: 16px;
+    font-weight: 600;
+    user-select: none;
+    transition: color 0.3s ease;
+
+    @include vp-1200 {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+.contact a:hover {
+    color: $color-golden;
+}
+
+.contact--footer {
+    margin-bottom: 10px;
+}
+
+.contact--footer a {
+    font-size: 20px;
+}
+
+.contact__wrapper {
+    display: none;
+
+    @include vp-1200 {
+        display: block;
+    }
+}
+
+.contact__address {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    margin-top: 20px;
+    pointer-events: none;
+}

@@ -1,0 +1,19 @@
+.exclusive {
+    padding: 70px 0;
+}
+
+.exclusive__item {
+    padding: 25px;
+    background-color: #3d4b55;
+    color: white;
+    border-radius: 25px;
+    height: auto;
+}
+
+@media (min-width: 1200px) {
+    .exclusive__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+}

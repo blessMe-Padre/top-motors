@@ -1,0 +1,17 @@
+.scroll-top {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    color: $color-red;
+    border: 2px solid #bf3f3f;
+    border-radius: 100%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10%;
+    right: 30px;
+    display: none;
+}
+
+.scroll-top.is-active {
+    display: block;
+}

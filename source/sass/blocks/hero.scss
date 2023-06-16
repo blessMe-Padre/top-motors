@@ -1,0 +1,19 @@
+.hero {
+    position: relative;
+
+    @include vp-1200 {
+        margin-top: 62px;
+    }
+}
+
+.hero__slider {
+    height: calc(100vh - 50px);
+}
+
+.hero__item {
+    background-color: #dbd4d4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

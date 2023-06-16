@@ -1,0 +1,9 @@
+@keyframes pulse1 {
+  from {
+    transform: translateX(0) translateY(0) rotate(0);
+  }
+
+  to {
+    transform: translateX(-100px) translateY(-100px) rotate(360deg);
+  }
+}

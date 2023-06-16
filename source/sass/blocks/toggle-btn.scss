@@ -1,0 +1,58 @@
+.toggle-btn {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding: 8px;
+  width: 48px;
+  height: 48px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 20;
+
+  span {
+    display: block;
+    width: 32px;
+    height: 3px;
+    background-color: $color-default-white;
+    transition: transform 0.4s ease;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    width: 32px;
+    height: 3px;
+    background-color: $color-default-white;
+    transition: transform 0.4s ease;
+
+  }
+
+  &::after {
+    top: 34px;
+  }
+
+  @include vp-1200 {
+    display: block;
+  }
+}
+
+.toggle-btn.is-active {
+  span {
+    transform: scaleX(0);
+  }
+
+  &::before {
+    top: 23px;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    top: 23px;
+    transform: rotate(-45deg);
+  }
+}

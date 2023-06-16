@@ -1,0 +1,17 @@
+.page {
+  color: $color-shaft;
+  font-family: "Roboto", "Arial", "Tahoma", sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+.page-lock::before {
+  content: '';
+  display: block;
+  position: fixed;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .5);
+  z-index: 1;
+}
