@@ -6,6 +6,7 @@ import { initExclusiveSlider } from './modules/exclusive-slider';
 import './modules/mixitup';
 import { initTabs } from './modules/tabs';
 import { initSteps } from './modules/steps';
+import { initPopup } from './modules/popup';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -17,4 +18,5 @@ window.addEventListener('DOMContentLoaded', () => {
   initExclusiveSlider();
   initTabs();
   initSteps();
+  initPopup();
 });
