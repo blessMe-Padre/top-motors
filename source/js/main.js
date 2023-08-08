@@ -7,6 +7,8 @@ import './modules/mixitup';
 import { initTabs } from './modules/tabs';
 import { initSteps } from './modules/steps';
 import { initPopup } from './modules/popup';
+import { initInStockSlider } from './modules/in-stock-slider';
+import { initInStockSliderReverse } from './modules/in-stock-slider-reverse';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -16,6 +18,8 @@ window.addEventListener('DOMContentLoaded', () => {
   initScrollToTop();
   initHeroSlider();
   initExclusiveSlider();
+  initInStockSlider();
+  initInStockSliderReverse();
   initTabs();
   initSteps();
   initPopup();
