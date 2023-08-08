@@ -1,7 +1,7 @@
 .header {
-  position: relative;
-  background: $color-quartz;
-  min-height: 50px;
+  position: fixed;
+  background: transparent;
+  min-height: 100px;
   left: 0;
   width: 100%;
   top: 0;
@@ -13,11 +13,23 @@
   @include vp-1200 {
     min-height: 62px;
     position: fixed;
+    background: $color-quartz;
+  }
+}
+
+.logo.logo--mobile {
+  display: none;
+
+  @include vp-1200 {
+    display: block;
+    margin-bottom: 0;
+    margin-left: 25px;
   }
 }
 
 .header-fixed {
   position: fixed;
+  background-color: $color-quartz;
 }
 
 .header__wrapper {

@@ -1,5 +1,10 @@
 .title {
     text-align: center;
-    font-size: 36px;
-    margin: 0 0 40px 0;
+    @include adaptiv-value("font-size", 45, 26, 1);
+    @include adaptiv-value("margin-bottom", 70, 40, 1);
+}
+
+.title--white {
+    text-align: center;
+    color: #fff;
 }

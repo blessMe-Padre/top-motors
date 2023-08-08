@@ -53,7 +53,7 @@ body.lock {
     transition: all 0.8s ease 0s;
     opacity: 0;
     transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
-    border: 1px solid orange;
+    border: 1px solid $color-red;
     border-radius: 5px;
     overflow-y: auto;
     overflow-x: hidden;

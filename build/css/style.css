@@ -1521,9 +1521,9 @@ button,
 }
 
 .header {
-  position: relative;
-  background: #3e3e3e;
-  min-height: 50px;
+  position: fixed;
+  background: transparent;
+  min-height: 100px;
   left: 0;
   width: 100%;
   top: 0;
@@ -1537,8 +1537,13 @@ button,
   z-index: 99;
 }
 
+.logo.logo--mobile {
+  display: none;
+}
+
 .header-fixed {
   position: fixed;
+  background-color: #3e3e3e;
 }
 
 .header__wrapper {
@@ -1621,7 +1626,6 @@ button,
   list-style: none;
   margin: 0;
   padding: 0;
-  max-width: 480px;
 }
 
 .nav__item {
@@ -1671,7 +1675,7 @@ button,
 }
 
 .nav__link:hover {
-  color: #ffe791;
+  color: #c81010;
 }
 
 .toggle-btn {
@@ -1742,15 +1746,20 @@ button,
 
 .title {
   text-align: center;
-  font-size: 36px;
-  margin: 0 0 40px 0;
+  font-size: 45px;
+  margin-bottom: 70px;
+}
+
+.title--white {
+  text-align: center;
+  color: #fff;
 }
 
 .contact {
   font-weight: 700;
 }
 
-.contact a {
+.contact__link {
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
@@ -1758,13 +1767,13 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-transition: color 0.3s ease;
-  -o-transition: color 0.3s ease;
-  transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
 }
 
-.contact a:hover {
-  color: #ffe791;
+.contact__link:hover {
+  color: #c81010;
 }
 
 .contact--footer {
@@ -1787,11 +1796,28 @@ button,
   pointer-events: none;
 }
 
+.contact__btn {
+  border: 1px solid #c81010;
+  background-color: #c81010;
+  color: #ffffff;
+  margin-left: 30px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  -webkit-transition: color 0.3s ease-in, background-color 0.3s ease-in;
+  -o-transition: color 0.3s ease-in, background-color 0.3s ease-in;
+  transition: color 0.3s ease-in, background-color 0.3s ease-in;
+}
+
+.contact__btn:hover {
+  background-color: #ffffff;
+  color: #c81010;
+}
+
 .scroll-top {
   width: 40px;
   height: 40px;
   padding: 5px;
-  color: rgba(250, 0, 0, 0.6);
+  color: #c81010;
   border: 2px solid #bf3f3f;
   border-radius: 100%;
   cursor: pointer;
@@ -1809,8 +1835,23 @@ button,
   position: relative;
 }
 
+.hero .swiper-pagination-bullets {
+  bottom: 45px;
+}
+
+.hero .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  opacity: 1;
+}
+
+.hero .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #c81010;
+}
+
 .hero__slider {
-  height: calc(100vh - 50px);
+  height: 100vh;
 }
 
 .hero__item {
@@ -1828,18 +1869,35 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  position: relative;
+}
+
+.hero__item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .exclusive {
   padding: 70px 0;
+  background-color: #000000;
 }
 
 .exclusive__item {
   padding: 25px;
-  background-color: #3d4b55;
+  background-color: #333333;
   color: white;
   border-radius: 25px;
   height: auto;
+}
+
+.exclusive__item img {
+  margin: 0 auto;
+  padding: 50px 0;
 }
 
 .order {
@@ -2132,7 +2190,7 @@ body.lock {
   opacity: 0;
   -webkit-transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
   transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
-  border: 1px solid orange;
+  border: 1px solid #c81010;
   border-radius: 5px;
   overflow-y: auto;
   overflow-x: hidden;
@@ -2191,10 +2249,27 @@ body.lock {
   }
 }
 
+@media (max-width: 1430px) {
+  .title {
+    font-size: calc(26px + 19 * ((100vw - 320px) / 1110));
+  }
+
+  .title {
+    margin-bottom: calc(40px + 30 * ((100vw - 320px) / 1110));
+  }
+}
+
 @media (max-width: 1200px) {
   .header {
     min-height: 62px;
     position: fixed;
+    background: #3e3e3e;
+  }
+
+  .logo.logo--mobile {
+    display: block;
+    margin-bottom: 0;
+    margin-left: 25px;
   }
 
   .header__wrapper {
@@ -2268,7 +2343,7 @@ body.lock {
     display: none;
   }
 
-  .contact a {
+  .contact__link {
     display: block;
     font-size: 20px;
     margin-bottom: 10px;
@@ -2276,6 +2351,11 @@ body.lock {
 
   .contact__wrapper {
     display: block;
+  }
+
+  .contact__btn {
+    display: block;
+    margin: 25px 0 15px;
   }
 
   .hero {

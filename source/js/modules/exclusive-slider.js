@@ -21,16 +21,16 @@ const initExclusiveSlider = () => {
         const exclusiveSliderInit = function () {
             swiper = new Swiper(exclusiveSlider, {
                 loop: true,
-                spaceBetween: 10,
+                spaceBetween: 30,
                 init: true,
                 slidesPerView: 1.5,
                 breakpoints: {
                     767: {
-                        slidesPerView: 2,
+                        slidesPerView: 2.3,
                         spaceBetween: 20,
                     },
                     1023: {
-                        slidesPerView: 3,
+                        slidesPerView: 3.3,
                         spaceBetween: 35,
                     },
                 },

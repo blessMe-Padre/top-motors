@@ -1,13 +1,19 @@
 .exclusive {
     padding: 70px 0;
+    background-color: $color-default-black;
 }
 
 .exclusive__item {
     padding: 25px;
-    background-color: #3d4b55;
+    background-color: $color-dark-gray;
     color: white;
     border-radius: 25px;
     height: auto;
+}
+
+.exclusive__item img {
+    margin: 0 auto;
+    padding: 50px 0;
 }
 
 @media (min-width: 1200px) {

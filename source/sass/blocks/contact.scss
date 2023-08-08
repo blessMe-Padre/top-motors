@@ -8,12 +8,12 @@
     }
 }
 
-.contact a {
+.contact__link {
     color: $color-default-white;
     font-size: 16px;
     font-weight: 600;
     user-select: none;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease-in;
 
     @include vp-1200 {
         display: block;
@@ -22,8 +22,8 @@
     }
 }
 
-.contact a:hover {
-    color: $color-golden;
+.contact__link:hover {
+    color: $color-red;
 }
 
 .contact--footer {
@@ -48,4 +48,24 @@
     line-height: 19px;
     margin-top: 20px;
     pointer-events: none;
+}
+
+.contact__btn {
+    border: 1px solid $color-red;
+    background-color: $color-red;
+    color: $color-default-white;
+    margin-left: 30px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in;
+
+    @include vp-1200 {
+        display: block;
+        margin: 25px 0 15px;
+    }
+}
+
+.contact__btn:hover {
+    background-color: $color-default-white;
+    color: $color-red;
 }

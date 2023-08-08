@@ -4,10 +4,25 @@
     @include vp-1200 {
         margin-top: 62px;
     }
+
+    .swiper-pagination-bullets {
+        bottom: 45px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: $color-red;
+    }
 }
 
 .hero__slider {
-    height: calc(100vh - 50px);
+    height: 100vh;
 }
 
 .hero__item {
@@ -16,4 +31,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+.hero__item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
