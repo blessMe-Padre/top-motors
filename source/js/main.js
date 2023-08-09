@@ -9,6 +9,8 @@ import { initSteps } from './modules/steps';
 import { initPopup } from './modules/popup';
 import { initInStockSlider } from './modules/in-stock-slider';
 import { initInStockSliderReverse } from './modules/in-stock-slider-reverse';
+import { initMask } from './modules/mask';
+import { initValidation } from './modules/validation';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -23,4 +25,6 @@ window.addEventListener('DOMContentLoaded', () => {
   initTabs();
   initSteps();
   initPopup();
+  initValidation();
+  initMask();
 });
