@@ -2231,14 +2231,11 @@ button,
 }
 
 .steps {
-  padding: 150px 0;
-  background-color: #3d4b55;
-}
-
-.steps h2 {
-  margin-bottom: 50px;
-  text-align: center;
-  color: #ffffff;
+  padding: 100px 0;
+  background: #333;
+  background-image: url("../img/bg/bg-1.png");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
 }
 
 .steps__progress {
@@ -2255,7 +2252,7 @@ button,
   left: 0;
   top: 0;
   height: 2px;
-  background: orange;
+  background: #c81010;
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -2283,7 +2280,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 100px;
+  gap: 70px;
   position: relative;
   max-width: 950px;
   color: #fff;
@@ -2300,10 +2297,10 @@ button,
   -ms-flex-pack: center;
   justify-content: center;
   border-radius: 100%;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   border: 2px solid white;
-  background: #3d4b55;
+  background: #333;
   z-index: 1;
   -webkit-transition: all 0.6s ease;
   -o-transition: all 0.6s ease;
@@ -2311,34 +2308,48 @@ button,
 }
 
 .step__number--active {
-  background: orange;
+  background: #c81010;
   border: transparent;
 }
 
 .steps__item {
   display: none;
-  padding: 50px 0;
+  padding: 80px 0 50px;
   min-height: 200px;
   font-size: 24px;
   color: #ffffff;
+  text-align: center;
 }
 
 .steps__item-text {
   font-size: 18px;
   line-height: 1.2;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .steps__item.active {
   display: block;
 }
 
+.steps__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .step__button {
-  border: none;
-  border-radius: 2px;
+  border: 1px solid #c81010;
+  border-radius: 4px;
   padding: 10px;
   min-width: 120px;
   color: white;
-  background-color: orange;
+  background-color: #c81010;
   font-family: inherit;
   font-size: 16px;
   margin-right: 30px;
@@ -2357,7 +2368,9 @@ button,
 }
 
 .step__button:disabled {
-  opacity: 0.7;
+  background-color: #333;
+  border-color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.4);
   cursor: default;
 }
 
@@ -2618,6 +2631,11 @@ body.lock {
 
   .steps__numbers {
     gap: 60px;
+  }
+
+  .step__number {
+    width: 50px;
+    height: 50px;
   }
 }
 
