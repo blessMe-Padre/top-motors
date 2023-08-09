@@ -10680,5 +10680,9 @@
     mixitup.NAME = 'mixitup';
     mixitup.CORE_VERSION = '3.3.1';
 
-    // var mixer = mixitup('.container-filter');
+    let mixitUp = document.querySelector('.container-filter');
+    if (mixitUp) {
+        var mixer = mixitup('.container-filter');
+    }
+
 })(window);
