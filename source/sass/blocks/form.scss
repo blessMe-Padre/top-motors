@@ -275,3 +275,29 @@ textarea.form__input {
         margin-bottom: 45px;
     }
 }
+
+.popup-form {
+    .form__input {
+        background-color: #fff;
+        color: $color-default-black;
+        border-color: transparent;
+        border-bottom: 2px solid #c81010;
+    }
+
+    .form__title {
+        color: #1A1A1A;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 48px;
+    }
+
+    .form__sub-title {
+        color: rgba(0, 0, 0, 0.60);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        max-width: 70%;
+    }
+}

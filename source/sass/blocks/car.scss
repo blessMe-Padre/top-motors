@@ -2,6 +2,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+
+    @include vp-575 {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }
 
 .car__pictures img {
@@ -9,12 +14,6 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-
-.order__wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
 }
 
 .car__description {}
@@ -34,6 +33,10 @@
     font-weight: 700;
     padding-left: 15px;
     margin: 0 0 35px 0;
+
+    @include vp-575 {
+        margin: 0 0 15px 0;
+    }
 }
 
 .car__description-row {

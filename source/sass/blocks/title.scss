@@ -1,5 +1,6 @@
 .title {
     text-align: center;
+    margin: 0;
     @include adaptiv-value("font-size", 45, 26, 1);
     @include adaptiv-value("margin-bottom", 70, 40, 1);
     line-height: 1.2;
