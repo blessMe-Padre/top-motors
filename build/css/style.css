@@ -5716,7 +5716,8 @@ button,
 
 .delivery {
   padding: 100px 0;
-  background-image: url("../img/content/delivery/delivery-pattern.webp");
+  background-color: #1A1A1A;
+  color: #ffffff;
 }
 
 .delivery__list {
@@ -5740,6 +5741,7 @@ button,
   -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
   padding-right: 25px;
+  color: #ffffff;
 }
 
 .delivery__link:before {
@@ -5761,6 +5763,19 @@ button,
 
 .delivery__item {
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .delivery__item img {
@@ -5768,7 +5783,7 @@ button,
 }
 
 .delivery__item p {
-  color: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -5789,7 +5804,7 @@ button,
 
 .steps {
   padding: 100px 0;
-  background: #333;
+  background: #1A1A1A;
   background-image: url("../img/bg/bg-1.png");
   background-repeat: no-repeat;
   background-position: 100% 100%;
@@ -5933,6 +5948,7 @@ button,
 
 .cost {
   padding: 100px 0;
+  background-color: #1A1A1A;
 }
 
 .cost__wrapper {
