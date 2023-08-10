@@ -2,6 +2,7 @@
     text-align: center;
     @include adaptiv-value("font-size", 45, 26, 1);
     @include adaptiv-value("margin-bottom", 70, 40, 1);
+    line-height: 1.2;
 }
 
 .title--white {
