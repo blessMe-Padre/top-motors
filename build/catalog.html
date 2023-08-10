@@ -544,7 +544,7 @@
                 <div class="content-form">
                     <section class="form-section">
                         <div class="form-wrapper">
-                            <form action="#" id="form" class="form__body">
+                            <form action="#" id="form" class="form__body validate-form">
                                 <h2 class="form__title">заказать автомобиль</h2>
                                 <p class="form__sub-title">Заполните форму и мы свяжемся с вами с ближайшее время
                                 </p>
@@ -561,7 +561,7 @@
                                     </div>
 
                                     <div class="form__item">
-                                        <input name="message" id="formMessage" class="form__input _req"
+                                        <input name="message" id="formMessage" class="form__input"
                                             placeholder="Модель"></input>
                                     </div>
 
@@ -584,7 +584,7 @@
                         <div class="popup-form">
                             <section class="form-section">
                                 <div class="form-wrapper">
-                                    <form action="#" id="form" class="form__body">
+                                    <form action="#" id="form" class="form__body validate-form">
                                         <h2 class="form__title">Понравился автомобиль?</h2>
                                         <p class="form__sub-title">Оставьте заявку, и мы предоставим вам полную
                                             информацию о понравившемся авто</p>
@@ -610,27 +610,66 @@
                     </div>
                 </div>
             </div>
-            <div id="popup2" class="popup">
-                <div class="popup__body">
-                    <div class="popup__content">
-                        <a href="#header" class="popup__close close-popup">
-                            <img src="img/close.svg" alt="закрыть">
-                        </a>
-                        <p>Lorem2 ipsum2 dolor2 sit2 am2et con2sectetur adipisicing elit. Magnam fugit accusantium odio
-                            vero
-                            molestiae at
-                            2222222222222222222222222222222 22222222222222222222 222222222222222222
-                            quia iusto, labore quae saepe, deleniti praesentium tempora tenetur amet similique
-                            laudantium! Voluptate,
-                            veritatis accusamus!</p>
-                    </div>
-                </div>
-            </div>
     </div>
     </main>
 
     <footer class="footer">
-        footer
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__wrapper">
+                    <nav class="footer__nav">
+                        <div class="footer__logo">
+                            <img src="img/logo.png" alt="логотип" width="125" height="32">
+                        </div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a class="link" href="#">Авто в наличии</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="link" href="#">Варианты доставки</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="link" href="#">Этапы работы</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="link" href="#">Услуги</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="link" href="#">О нас</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer__info">
+                        <p>Г. Чочва, р-н Пупкина, ул. Затупкина 16</p>
+                        <a class="link" href="tel:+79999999999">+7 (999) 999 - 99 - 99</a>
+                        <a class="link" href="mailto:info@gmail.com">info@gmail.com</a>
+                        <p>ООО «ТОП МОТОРС» ИНН: 6438886529 ОГРН: 9735330397309</p>
+                        <p class="footer__info-right">© 2023 TOP MOTORS. Все права защищены</p>
+                    </div>
+                </div>
+                <div class="footer__form">
+                    <section class="form-section">
+                        <div class="form-wrapper">
+                            <form action="#" id="form" class="form__body validate-form">
+                                <h3 class="form__title">Остались вопросы?</h3>
+                                <p>Заполните форму ниже и мы свяжемся с вами</p>
+                                <div class="form__item">
+                                    <input id="formName" type="text" name="name" class="form__input _req"
+                                        placeholder="Ваше имя">
+                                </div>
+
+                                <div class="form__item">
+                                    <input id="formPhone" type="tel" name="phone" class="form__input _req"
+                                        placeholder="Ваш телефон">
+                                </div>
+
+                                <button type="submit" class="form__button">Заказать звонок</button>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
     </footer>
     </div>
     <div class="scroll-top">

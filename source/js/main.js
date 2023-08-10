@@ -1,9 +1,11 @@
 import { initNav } from './modules/nav';
 import { initStickyHeader } from './modules/sticky-header';
 import { initScrollToTop } from './modules/scroll-to-top';
+import { initScroll } from './modules/scroll';
 import { initHeroSlider } from './modules/hero-slider';
 import { initExclusiveSlider } from './modules/exclusive-slider';
 import './modules/mixitup';
+import WOW from './modules/wow';
 import { initTabs } from './modules/tabs';
 import { initSteps } from './modules/steps';
 import { initPopup } from './modules/popup';
@@ -18,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initStickyHeader();
   initNav();
   initScrollToTop();
+  initScroll();
   initHeroSlider();
   initExclusiveSlider();
   initInStockSlider();
@@ -27,4 +30,5 @@ window.addEventListener('DOMContentLoaded', () => {
   initPopup();
   initValidation();
   initMask();
+  new WOW().init();
 });
