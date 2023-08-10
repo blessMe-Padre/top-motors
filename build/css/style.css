@@ -2912,6 +2912,10 @@ textarea.form__input {
   box-shadow: 0 2px 0 #161b13;
 }
 
+.content__form {
+  margin-top: 60px;
+}
+
 .content__form .form-section {
   background-color: #333;
   padding: 40px 60px 54px;
@@ -3042,7 +3046,6 @@ textarea.form__input {
   font-weight: 400;
   line-height: 24px;
   max-width: 770px;
-  margin-bottom: 60px;
 }
 
 .footer {
