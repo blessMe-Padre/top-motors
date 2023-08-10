@@ -28,6 +28,22 @@ const initTabs = () => {
             tabs_blocks[index].style.maxHeight = tabs_blocks[index].scrollHeight + 'px';
         });
     }
+
+    // Добавляет класс .is-active к кнопке выбранного фильтра
+
+    const orderButtons = document.querySelectorAll('.order__btn-1');
+
+    if (orderButtons) {
+        orderButtons.forEach((button) => {
+            button.addEventListener('click', (evt) => {
+                orderButtons.forEach((button) => {
+                    button.classList.remove('_active');
+                });
+                evt.preventDefault();
+                button.classList.add('_active');
+            });
+        });
+    }
 };
 
 export { initTabs };

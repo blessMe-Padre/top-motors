@@ -1270,7 +1270,7 @@ html {
   font-size: 16px;
   line-height: 24px;
   font-family: "Placeholder", "Arial", sans-serif;
-  color: #000000;
+  color: #1A1A1A;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -1283,7 +1283,7 @@ body {
 }
 
 a {
-  color: #000000;
+  color: #1A1A1A;
   text-decoration: none;
 }
 
@@ -1301,7 +1301,7 @@ textarea {
 input:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0 1000px #ffffff;
   box-shadow: inset 0 0 0 1000px #ffffff;
-  -webkit-text-fill-color: #000000;
+  -webkit-text-fill-color: #1A1A1A;
 }
 
 input,
@@ -1896,7 +1896,7 @@ button,
 
 .exclusive {
   padding: 70px 0;
-  background-color: #000000;
+  background-color: #1A1A1A;
 }
 
 .exclusive__item {
@@ -1933,7 +1933,8 @@ button,
   opacity: 1;
 }
 
-.order__nav {
+.order__nav,
+.order__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1943,12 +1944,23 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
-.order__btn {
-  margin-right: 30px;
+.order__btn,
+.order__btn-1 {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  padding: 0 0 3px;
+  margin-right: 20px;
+  margin-bottom: 15px;
   cursor: pointer;
+}
+
+.order__btn._active,
+.order__btn-1._active {
+  border-bottom: 2px solid #000;
 }
 
 .order__list {
@@ -2004,7 +2016,7 @@ button,
 
 .in-stock {
   padding: 70px 0;
-  background-color: #000000;
+  background-color: #1A1A1A;
   color: #ffffff;
 }
 
@@ -2519,7 +2531,7 @@ button,
 
 .about {
   padding: 100px 0;
-  background-color: #000000;
+  background-color: #1A1A1A;
 }
 
 .about__list {
@@ -2730,7 +2742,7 @@ body.lock {
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   border-bottom: 2px solid #c81010;
-  background-color: #000000;
+  background-color: #1A1A1A;
   color: #ffffff;
 }
 
@@ -2914,6 +2926,7 @@ textarea.form__input {
 
 .content-form {
   margin-top: 60px;
+  margin-bottom: 100px;
 }
 
 .content-form .form-section {
@@ -2979,10 +2992,41 @@ textarea.form__input {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 740px;
+  height: 1px;
+}
+
+.first .container--space-center {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.first .container--space-center .first__title {
+  margin-bottom: 100px;
 }
 
 .first--bg-2 {
   background-image: url("../img/bg/bg-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first--bg-3 {
+  background-image: url("../img/bg/bg-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.first--bg-4 {
+  background-image: url("../img/bg/bg-4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -3058,10 +3102,86 @@ textarea.form__input {
   color: #c81010;
 }
 
+.car {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.car__pictures img {
+  border-radius: 25px;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.order__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.car__description h3 {
+  color: #1A1A1A;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+  padding-left: 15px;
+  margin: 0 0 10px 0;
+}
+
+.car__description-cost {
+  color: #1A1A1A;
+  font-size: 24px;
+  font-weight: 700;
+  padding-left: 15px;
+  margin: 0 0 35px 0;
+}
+
+.car__description-row {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.car__description-row:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 8px;
+  border: 1px dashed rgba(0, 0, 0, 0.6);
+}
+
+.car__description-item {
+  padding: 5px 15px;
+  z-index: 1;
+  background-color: #f0f8ff;
+}
+
 .footer {
   position: relative;
   padding: 75px 0 25px;
-  background-color: #000000;
+  background-color: #1A1A1A;
   color: #ffffff;
 }
 

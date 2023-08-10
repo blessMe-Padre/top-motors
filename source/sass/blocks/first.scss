@@ -3,10 +3,34 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 740px;
+    height: 1px;
+
+    .container--space-center {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .first__title {
+            margin-bottom: 100px;
+        }
+    }
 }
 
 .first--bg-2 {
     background-image: url('../img/bg/bg-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first--bg-3 {
+    background-image: url('../img/bg/bg-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first--bg-4 {
+    background-image: url('../img/bg/bg-4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }

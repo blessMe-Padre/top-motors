@@ -16,16 +16,28 @@
     opacity: 1;
 }
 
-.order__nav {
+.order__nav,
+.order__buttons {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
-.order__btn {
-    margin-right: 30px;
+.order__btn,
+.order__btn-1 {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 0 0 3px;
+    margin-right: 20px;
+    margin-bottom: 15px;
     cursor: pointer;
+}
+
+.order__btn._active,
+.order__btn-1._active {
+    border-bottom: 2px solid #000;
 }
 
 .order__list {
