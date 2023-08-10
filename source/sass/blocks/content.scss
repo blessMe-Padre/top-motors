@@ -24,3 +24,7 @@
     line-height: 24px;
     max-width: 770px;
 }
+
+.content li::marker {
+    color: $color-red;
+}

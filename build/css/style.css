@@ -2912,17 +2912,17 @@ textarea.form__input {
   box-shadow: 0 2px 0 #161b13;
 }
 
-.content__form {
+.content-form {
   margin-top: 60px;
 }
 
-.content__form .form-section {
+.content-form .form-section {
   background-color: #333;
   padding: 40px 60px 54px;
   border-radius: 25px;
 }
 
-.content__form .form-inner {
+.content-form .form-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2936,28 +2936,28 @@ textarea.form__input {
   flex-wrap: wrap;
 }
 
-.content__form .form__item {
+.content-form .form__item {
   margin-bottom: 25px;
   margin-right: 30px;
 }
 
-.content__form .form__input {
+.content-form .form__input {
   background-color: #333;
 }
 
-.content__form textarea.form__input {
+.content-form textarea.form__input {
   min-height: 20px;
   resize: vertical;
   padding: 0 20px;
 }
 
-.content__form .form__button {
+.content-form .form__button {
   max-width: 295px;
   min-height: 50px;
   top: -15px;
 }
 
-.content__form .form__title {
+.content-form .form__title {
   font-size: 35px;
   font-style: normal;
   font-weight: 400;
@@ -2965,7 +2965,7 @@ textarea.form__input {
   margin-bottom: 10px;
 }
 
-.content__form .form__sub-title {
+.content-form .form__sub-title {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   font-style: normal;
@@ -2981,13 +2981,19 @@ textarea.form__input {
   min-height: 740px;
 }
 
+.first--bg-2 {
+  background-image: url("../img/bg/bg-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .first__title {
   color: #ffffff;
   font-size: 45px;
   font-style: normal;
   font-weight: 400;
   line-height: 48px;
-  max-width: 400px;
+  max-width: 480px;
   margin: 0 0 30px 0;
 }
 
@@ -3046,6 +3052,10 @@ textarea.form__input {
   font-weight: 400;
   line-height: 24px;
   max-width: 770px;
+}
+
+.content li::marker {
+  color: #c81010;
 }
 
 .footer {
@@ -3263,7 +3273,7 @@ textarea.form__input {
     height: 50px;
   }
 
-  .content__form .form__item {
+  .content-form .form__item {
     margin-bottom: 25px;
   }
 
@@ -3378,11 +3388,11 @@ textarea.form__input {
     gap: 40px;
   }
 
-  .content__form .form-section {
+  .content-form .form-section {
     padding: 40px 15px 54px;
   }
 
-  .content__form .form__item {
+  .content-form .form__item {
     margin-bottom: 25px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3391,7 +3401,7 @@ textarea.form__input {
     margin-right: 0;
   }
 
-  .content__form .form__button {
+  .content-form .form__button {
     top: -2px;
     min-width: 100%;
   }
