@@ -1,6 +1,6 @@
 .delivery {
     padding: 100px 0;
-    background-color: $color-default-black;
+    background-color: #3e3e3e;
     color: $color-default-white;
 
     @include vp-767 {
@@ -67,6 +67,11 @@
         font-weight: 400;
         line-height: 22px;
     }
+}
+
+.delivery__item:nth-child(2) {
+    border-left: 2px solid red;
+    border-right: 2px solid red;
 }
 
 .delivery__wrapper {

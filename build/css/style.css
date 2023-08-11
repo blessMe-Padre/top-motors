@@ -5756,7 +5756,7 @@ button,
 
 .delivery {
   padding: 100px 0;
-  background-color: #1A1A1A;
+  background-color: #3e3e3e;
   color: #ffffff;
 }
 
@@ -5827,6 +5827,11 @@ button,
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
+}
+
+.delivery__item:nth-child(2) {
+  border-left: 2px solid red;
+  border-right: 2px solid red;
 }
 
 .delivery__wrapper {
@@ -5988,7 +5993,7 @@ button,
 
 .cost {
   padding: 100px 0;
-  background-color: #1A1A1A;
+  background-color: #3e3e3e;
 }
 
 .cost__wrapper {
@@ -6893,7 +6898,6 @@ textarea.form__input {
 }
 
 .decor-section {
-  padding: 70px 0;
   position: relative;
 }
 
@@ -6901,7 +6905,7 @@ textarea.form__input {
   position: absolute;
   top: 50%;
   right: 0;
-  height: 10px;
+  height: 3px;
   width: 0;
   background-color: red;
   -webkit-transition: all 0.3s ease;
