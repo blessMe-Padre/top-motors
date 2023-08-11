@@ -1,6 +1,7 @@
 .services {
     padding: 100px 0;
 
+    background-color: $color-default-white;
     background-image: url('../img/content/delivery/delivery-pattern.webp');
 
     @include vp-767 {
