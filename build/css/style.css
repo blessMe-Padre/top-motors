@@ -5056,6 +5056,8 @@ button,
 .header-fixed {
   position: fixed;
   background-color: #3e3e3e;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.23) 0px 5px 20px -5px;
+  box-shadow: rgba(0, 0, 0, 0.23) 0px 5px 20px -5px;
 }
 
 .header__wrapper {
@@ -5424,16 +5426,51 @@ button,
 }
 
 .exclusive__item {
-  padding: 25px;
+  padding: 20px;
   background-color: #333333;
   color: white;
   border-radius: 25px;
-  height: auto;
+  height: 1px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-transition: -webkit-box-shadow 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease;
+  -o-transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.exclusive__item-block {
+  border-radius: 25px;
+  padding: 20px;
+  -webkit-box-shadow: rgba(252, 252, 252, 0.16) 0px 1px 4px, #fcfcfc 0px 0px 0px 3px;
+  box-shadow: rgba(252, 252, 252, 0.16) 0px 1px 4px, #fcfcfc 0px 0px 0px 3px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  height: 100%;
 }
 
 .exclusive__item img {
   margin: 0 auto;
   padding: 50px 0;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.exclusive__item:hover .exclusive__item-block {
+  -webkit-box-shadow: rgba(249, 5, 5, 0.16) 0px 1px 4px, #f90505 0px 0px 0px 3px;
+  box-shadow: rgba(249, 5, 5, 0.16) 0px 1px 4px, #f90505 0px 0px 0px 3px;
+}
+
+.exclusive__item:hover img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .order {
@@ -6853,6 +6890,23 @@ textarea.form__input {
   -webkit-transform: scale(0.1, 1);
   -ms-transform: scale(0.1, 1);
   transform: scale(0.1, 1);
+}
+
+.decor-section {
+  padding: 70px 0;
+  position: relative;
+}
+
+.decor-section-line {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 10px;
+  width: 0;
+  background-color: red;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .footer {

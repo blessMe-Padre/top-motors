@@ -13,6 +13,7 @@ import { initInStockSlider } from './modules/in-stock-slider';
 import { initInStockSliderReverse } from './modules/in-stock-slider-reverse';
 import { initMask } from './modules/mask';
 import { initValidation } from './modules/validation';
+import { initDecoration } from './modules/decoration-element';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -30,5 +31,6 @@ window.addEventListener('DOMContentLoaded', () => {
   initPopup();
   initValidation();
   initMask();
+  initDecoration();
   new WOW().init();
 });
