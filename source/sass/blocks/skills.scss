@@ -1,0 +1,110 @@
+.skills {
+    @include adaptiv-value("padding-top", 80, 40, 1);
+    @include adaptiv-value("padding-bottom", 80, 40, 1);
+}
+
+.skills__inner {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skills__title {
+    @include adaptiv-value("font-size", 36, 22, 1);
+    margin-bottom: 20px;
+    color: $color-default-white;
+}
+
+.skills__inner .skills-card {
+    position: relative;
+    cursor: pointer;
+}
+
+
+.skills__inner .skills-card .face {
+    width: 260px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.skills__inner .skills-card .face.face1 {
+    position: relative;
+    background: #3e3e3e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+    border-radius: 20px;
+}
+
+.skills__inner .skills-card:hover .face.face1,
+.skills__inner .skills-card:focus .face.face1 {
+    background: $color-red;
+    transform: translateY(0);
+    border-radius: 0;
+}
+
+.skills__inner .skills-card .face.face1 .content1 {
+    transition: 0.5s;
+}
+
+.skills__inner .skills-card:hover .face.face1 .content1,
+.skills__inner .skills-card:focus .face.face1 .content1 {
+    opacity: 1;
+}
+
+.skills__inner .skills-card .face.face1 .content1 h3 {
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.skills__inner .skills-card .face.face2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    // box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+    box-shadow: rgba(255, 254, 254, 0.18) 0px 10px 36px 0px, rgba(245, 234, 234, 0.06) 0px 0px 0px 1px;
+    border-radius: 25px;
+}
+
+.skills__inner .skills-card:hover .face.face2,
+.skills__inner .skills-card:focus .face.face2 {
+    transform: translateY(0);
+    border-radius: 0;
+}
+
+.skills__inner .skills-card .face.face2 .content1 p {
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.skills__inner .skills-card .face.face2 .content1 a {
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+
+    @media (max-width: 636px) {
+        display: none;
+    }
+}
+
+.skills__inner .skills-card .face.face2 .content1 a:hover {
+    background: #E68A00;
+    color: #ffffff;
+}

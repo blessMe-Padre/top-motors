@@ -63,6 +63,11 @@
         opacity: 0.6;
         margin-bottom: 15px;
         background: transparent;
+        transition: color 0.3s ease;
+    }
+
+    .swiper-pagination-bullet:hover {
+        color: $color-red;
     }
 
     .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -173,6 +178,11 @@
         opacity: 0.6;
         margin-bottom: 15px;
         background: transparent;
+        transition: color 0.3s ease;
+    }
+
+    .swiper-pagination-bullet:hover {
+        color: $color-red;
     }
 
     .swiper-pagination-bullet.swiper-pagination-bullet-active {

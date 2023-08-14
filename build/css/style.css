@@ -5275,6 +5275,10 @@ button,
   color: #fff;
 }
 
+.title--mb {
+  margin-bottom: 20px;
+}
+
 .contact {
   font-weight: 700;
 }
@@ -5633,6 +5637,13 @@ button,
   opacity: 0.6;
   margin-bottom: 15px;
   background: transparent;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.in-stock__wrapper .swiper-pagination-bullet:hover {
+  color: #c81010;
 }
 
 .in-stock__wrapper .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -5713,6 +5724,13 @@ button,
   opacity: 0.6;
   margin-bottom: 15px;
   background: transparent;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.in-stock__inner .swiper-pagination-bullet:hover {
+  color: #c81010;
 }
 
 .in-stock__inner .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -6913,6 +6931,141 @@ textarea.form__input {
   transition: all 0.3s ease;
 }
 
+.skills {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.skills__inner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.skills__title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.skills__inner .skills-card {
+  position: relative;
+  cursor: pointer;
+}
+
+.skills__inner .skills-card .face {
+  width: 260px;
+  height: 200px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.skills__inner .skills-card .face.face1 {
+  position: relative;
+  background: #3e3e3e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1;
+  -webkit-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  transform: translateY(100px);
+  border-radius: 20px;
+}
+
+.skills__inner .skills-card:hover .face.face1,
+.skills__inner .skills-card:focus .face.face1 {
+  background: #c81010;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  border-radius: 0;
+}
+
+.skills__inner .skills-card .face.face1 .content1 {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.skills__inner .skills-card:hover .face.face1 .content1,
+.skills__inner .skills-card:focus .face.face1 .content1 {
+  opacity: 1;
+}
+
+.skills__inner .skills-card .face.face1 .content1 h3 {
+  margin: 10px 0 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+
+.skills__inner .skills-card .face.face2 {
+  position: relative;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  transform: translateY(-100px);
+  -webkit-box-shadow: rgba(255, 254, 254, 0.18) 0px 10px 36px 0px, rgba(245, 234, 234, 0.06) 0px 0px 0px 1px;
+  box-shadow: rgba(255, 254, 254, 0.18) 0px 10px 36px 0px, rgba(245, 234, 234, 0.06) 0px 0px 0px 1px;
+  border-radius: 25px;
+}
+
+.skills__inner .skills-card:hover .face.face2,
+.skills__inner .skills-card:focus .face.face2 {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  border-radius: 0;
+}
+
+.skills__inner .skills-card .face.face2 .content1 p {
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.skills__inner .skills-card .face.face2 .content1 a {
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #333;
+}
+
+.skills__inner .skills-card .face.face2 .content1 a:hover {
+  background: #E68A00;
+  color: #ffffff;
+}
+
 .footer {
   position: relative;
   padding: 75px 0 25px;
@@ -6999,6 +7152,18 @@ textarea.form__input {
 
   .title {
     margin-bottom: calc(40px + 30 * ((100vw - 320px) / 1110));
+  }
+
+  .skills {
+    padding-top: calc(40px + 40 * ((100vw - 320px) / 1110));
+  }
+
+  .skills {
+    padding-bottom: calc(40px + 40 * ((100vw - 320px) / 1110));
+  }
+
+  .skills__title {
+    font-size: calc(22px + 14 * ((100vw - 320px) / 1110));
   }
 }
 
@@ -7276,6 +7441,12 @@ textarea.form__input {
 
   .content {
     padding: 40px 0;
+  }
+}
+
+@media (max-width: 636px) {
+  .skills__inner .skills-card .face.face2 .content1 a {
+    display: none;
   }
 }
 
