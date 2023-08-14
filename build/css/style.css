@@ -5774,8 +5774,9 @@ button,
 
 .delivery {
   padding: 100px 0;
-  background-color: #3e3e3e;
+  background-color: #000;
   color: #ffffff;
+  background-image: url("../img/content/delivery/delivery-pattern.png");
 }
 
 .delivery__title {
@@ -5892,7 +5893,7 @@ button,
 
 .steps__img {
   position: absolute;
-  top: 20%;
+  top: 25%;
   right: 0;
 }
 
@@ -5988,7 +5989,7 @@ button,
 .steps__item-text {
   font-size: 18px;
   line-height: 1.2;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .steps__item.active {
@@ -6048,8 +6049,8 @@ button,
 
 .cost__wrapper {
   position: relative;
-  max-width: 370px;
-  max-height: 270px;
+  max-width: 460px;
+  max-height: auto;
   margin: 0 auto;
 }
 
@@ -6058,6 +6059,7 @@ button,
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  margin-top: -50px;
 }
 
 .cost__list {
@@ -6109,8 +6111,8 @@ button,
 }
 
 .cost__item:hover {
-  -webkit-box-shadow: #f9f7f7 0px 2px 8px 0px;
-  box-shadow: #f9f7f7 0px 2px 8px 0px;
+  -webkit-box-shadow: #f9f7f7 0px 1px 1px 2px;
+  box-shadow: #f9f7f7 0px 1px 1px 2px;
 }
 
 .services {
@@ -7015,8 +7017,6 @@ textarea.form__input {
   -ms-transform: translateY(100px);
   transform: translateY(100px);
   border-radius: 20px;
-  -webkit-box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px, white 0px 0px 0px 3px;
-  box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px, white 0px 0px 0px 3px;
 }
 
 .skills__inner .skills-card .face.face1 img {
@@ -7037,7 +7037,7 @@ textarea.form__input {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 20px;
   z-index: 1;
 }
@@ -7057,6 +7057,11 @@ textarea.form__input {
 .skills__inner .skills-card:hover .face.face1:before,
 .skills__inner .skills-card:focus .face.face1:before {
   border-radius: 0;
+}
+
+.skills__inner .skills-card:hover .face.face1::before,
+.skills__inner .skills-card:focus .face.face1::before {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .skills__inner .skills-card:hover .face.face1 img,
@@ -7085,6 +7090,7 @@ textarea.form__input {
   font-size: 20px;
   position: relative;
   z-index: 1;
+  font-weight: 500;
 }
 
 .skills__inner .skills-card .face.face2 {
@@ -7106,6 +7112,8 @@ textarea.form__input {
   -ms-transform: translateY(-100px);
   transform: translateY(-100px);
   border-radius: 25px;
+  background-image: url("../img/content/delivery/delivery-pattern.png");
+  background-color: #b3acac;
 }
 
 .skills__inner .skills-card:hover .face.face2,
@@ -7119,25 +7127,11 @@ textarea.form__input {
 }
 
 .skills__inner .skills-card .face.face2 .content1 p {
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
-}
-
-.skills__inner .skills-card .face.face2 .content1 a {
-  margin: 15px 0 0;
-  display: inline-block;
-  text-decoration: none;
-  font-weight: 500;
-  color: #333;
-  padding: 5px;
-  border: 1px solid #333;
-}
-
-.skills__inner .skills-card .face.face2 .content1 a:hover {
-  background: #E68A00;
-  color: #ffffff;
+  text-align: center;
 }
 
 .footer {
@@ -7515,12 +7509,6 @@ textarea.form__input {
 
   .content {
     padding: 40px 0;
-  }
-}
-
-@media (max-width: 636px) {
-  .skills__inner .skills-card .face.face2 .content1 a {
-    display: none;
   }
 }
 

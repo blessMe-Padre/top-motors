@@ -1,7 +1,8 @@
 .delivery {
     padding: 100px 0;
-    background-color: #3e3e3e;
+    background-color: #000;
     color: $color-default-white;
+    background-image: url('../img/content/delivery/delivery-pattern.png');
 
     @include vp-767 {
         padding: 40px 0;
