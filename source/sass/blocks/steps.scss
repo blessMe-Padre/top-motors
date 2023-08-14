@@ -1,9 +1,13 @@
 .steps {
     padding: 100px 0;
     background: $color-default-black;
-    background-image: url('../img/bg/bg-1.png');
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
+    position: relative;
+}
+
+.steps__img {
+    position: absolute;
+    top: 20%;
+    right: 0;
 }
 
 .steps__progress {
@@ -95,9 +99,13 @@
     font-size: 24px;
     color: #ffffff;
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
-.steps__item-title {}
+.steps__item-title {
+    z-index: 1;
+}
 
 .steps__item-text {
     font-size: 18px;
@@ -113,6 +121,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 1;
 }
 
 .step__button {
