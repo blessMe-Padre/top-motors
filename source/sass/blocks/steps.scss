@@ -7,7 +7,7 @@
 .steps__img {
     position: absolute;
     top: 25%;
-    right: 0;
+    right: -280px;
 }
 
 .steps__progress {
@@ -54,8 +54,7 @@
     }
 
     @media (max-width: 460px) {
-        max-width: 100%;
-        gap: 25px;
+        gap: 15px;
     }
 }
 

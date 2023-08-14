@@ -5894,7 +5894,7 @@ button,
 .steps__img {
   position: absolute;
   top: 25%;
-  right: 0;
+  right: -280px;
 }
 
 .steps__progress {
@@ -7056,7 +7056,8 @@ textarea.form__input {
 
 .skills__inner .skills-card:hover .face.face1:before,
 .skills__inner .skills-card:focus .face.face1:before {
-  border-radius: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .skills__inner .skills-card:hover .face.face1::before,
@@ -7580,8 +7581,7 @@ textarea.form__input {
 
 @media (max-width: 460px) {
   .steps__numbers {
-    max-width: 100%;
-    gap: 25px;
+    gap: 15px;
   }
 
   .step__number {
