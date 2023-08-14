@@ -66,9 +66,21 @@
 .skills__inner .skills-card:hover .face.face1,
 .skills__inner .skills-card:focus .face.face1 {
     transform: translateY(0);
+    border-radius: 0;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     box-shadow: none;
+
+    &:before {
+        border-radius: 0;
+    }
+
+    img {
+        border-radius: 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
 }
 
 .skills__inner .skills-card .face.face1 .content1 {

@@ -7047,10 +7047,23 @@ textarea.form__input {
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
+  border-radius: 0;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+.skills__inner .skills-card:hover .face.face1:before,
+.skills__inner .skills-card:focus .face.face1:before {
+  border-radius: 0;
+}
+
+.skills__inner .skills-card:hover .face.face1 img,
+.skills__inner .skills-card:focus .face.face1 img {
+  border-radius: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .skills__inner .skills-card .face.face1 .content1 {
