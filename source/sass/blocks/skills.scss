@@ -37,6 +37,7 @@
     z-index: 1;
     transform: translateY(100px);
     border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px, rgb(255, 255, 255) 0px 0px 0px 3px;
 }
 
 .skills__inner .skills-card:hover .face.face1,
@@ -44,6 +45,7 @@
     background: $color-red;
     transform: translateY(0);
     border-radius: 0;
+    box-shadow: none;
 }
 
 .skills__inner .skills-card .face.face1 .content1 {
@@ -73,7 +75,6 @@
     box-sizing: border-box;
     // box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
     transform: translateY(-100px);
-    box-shadow: rgba(255, 254, 254, 0.18) 0px 10px 36px 0px, rgba(245, 234, 234, 0.06) 0px 0px 0px 1px;
     border-radius: 25px;
 }
 

@@ -1,6 +1,12 @@
 .cost {
     padding: 100px 0;
     background-color: #3e3e3e;
+    // background-image: url('../img/bg/bg-5.jpg');
+    // background-repeat: no-repeat;
+    // background-position: 100% 100%;
+    // background-size: cover;
+
+    background-image: url('../img/content/delivery/delivery-pattern.png');
 
     @include vp-767 {
         padding: 40px 0;
@@ -9,8 +15,8 @@
 
 .cost__wrapper {
     position: relative;
-    width: 740px;
-    height: 440px;
+    max-width: 370px;
+    max-height: 270px;
     margin: 0 auto;
 
     @include vp-767 {

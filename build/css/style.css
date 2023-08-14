@@ -5834,6 +5834,13 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 20px;
+  background-color: #181818;
 }
 
 .delivery__item img {
@@ -5842,14 +5849,19 @@ button,
 
 .delivery__item p {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+  opacity: 0;
+  text-align: center;
 }
 
-.delivery__item:nth-child(2) {
-  border-left: 2px solid red;
-  border-right: 2px solid red;
+.delivery__item:hover {
+  background-color: #585858;
+}
+
+.delivery__item:hover p {
+  opacity: 1;
 }
 
 .delivery__wrapper {
@@ -6012,12 +6024,13 @@ button,
 .cost {
   padding: 100px 0;
   background-color: #3e3e3e;
+  background-image: url("../img/content/delivery/delivery-pattern.png");
 }
 
 .cost__wrapper {
   position: relative;
-  width: 740px;
-  height: 440px;
+  max-width: 370px;
+  max-height: 270px;
   margin: 0 auto;
 }
 
@@ -6983,6 +6996,8 @@ textarea.form__input {
   -ms-transform: translateY(100px);
   transform: translateY(100px);
   border-radius: 20px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px, white 0px 0px 0px 3px;
+  box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px, white 0px 0px 0px 3px;
 }
 
 .skills__inner .skills-card:hover .face.face1,
@@ -6992,6 +7007,8 @@ textarea.form__input {
   -ms-transform: translateY(0);
   transform: translateY(0);
   border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .skills__inner .skills-card .face.face1 .content1 {
@@ -7031,8 +7048,6 @@ textarea.form__input {
   -webkit-transform: translateY(-100px);
   -ms-transform: translateY(-100px);
   transform: translateY(-100px);
-  -webkit-box-shadow: rgba(255, 254, 254, 0.18) 0px 10px 36px 0px, rgba(245, 234, 234, 0.06) 0px 0px 0px 1px;
-  box-shadow: rgba(255, 254, 254, 0.18) 0px 10px 36px 0px, rgba(245, 234, 234, 0.06) 0px 0px 0px 1px;
   border-radius: 25px;
 }
 

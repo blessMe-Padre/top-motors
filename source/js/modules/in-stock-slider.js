@@ -4,6 +4,7 @@ const initInStockSlider = () => {
     if (inStockSlider) {
         new Swiper(inStockSlider, {
             loop: true,
+            // effect: 'fade',
             spaceBetween: 30,
             init: true,
             slidesPerView: 1,
