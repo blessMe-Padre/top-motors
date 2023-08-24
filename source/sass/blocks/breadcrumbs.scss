@@ -2,6 +2,7 @@
     padding: 30px 0;
     padding-top: 100px;
     margin-bottom: 100px;
+    z-index: 1;
 }
 
 .breadcrumbs__list {
@@ -9,12 +10,13 @@
     padding: 0;
     list-style: none;
     display: flex;
+    margin-top: 20px;
 }
 
 .breadcrumbs__item {
-    color: rgba(255, 255, 255, 0.50);
+    color: rgba(255, 255, 255, 0.70);
 }
 
 .breadcrumbs__item a {
-    color: rgba(255, 255, 255, 0.70);
+    color: rgba(255, 255, 255, 1);
 }

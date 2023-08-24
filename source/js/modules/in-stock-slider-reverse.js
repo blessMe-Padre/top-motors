@@ -12,7 +12,7 @@ const initInStockSliderReverse = () => {
                 el: '.swiper-pagination',
                 clickable: true,
                 renderBullet: function (index, className) {
-                    let bulletTexts = ['Toyota', 'Hyundai', 'KIA', 'Toyota', 'Hyundai', 'KIA'];
+                    let bulletTexts = ['Mercedes', 'BMW', 'Audi', 'Hyundai', 'KIA', 'Ssangyong'];
                     return '<span class="' + className + '">' + bulletTexts[index] + '</span>';
                 },
             },

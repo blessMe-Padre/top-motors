@@ -14,10 +14,12 @@
 
 .in-stock__wrapper {
     position: relative;
-
-    background-image: url('../img/content/in-stock/bg-japan.png');
+    // background-image: url('../img/content/in-stock/1.png');
+    background-image: url('../img/content/in-stock/japan3-1.png');
     background-repeat: no-repeat;
     background-position: center right;
+    background-size: 350px 450px;
+
 
 
     @include vp-575 {
@@ -125,9 +127,10 @@
     margin-top: 80px;
     position: relative;
 
-    background-image: url('../img/content/in-stock/bg-korea.png');
+    background-image: url('../img/content/in-stock/3-1.png');
     background-repeat: no-repeat;
     background-position: center left;
+    background-size: 350px 450px;
 
     @include vp-575 {
         min-height: 600px;

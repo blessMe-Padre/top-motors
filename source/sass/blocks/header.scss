@@ -10,10 +10,14 @@
   align-items: center;
   z-index: 99;
 
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
   @include vp-1200 {
     min-height: 62px;
     position: fixed;
-    background: $color-quartz;
+    // background: $color-quartz;
+    background: rgba(0, 0, 0, 0.4);
   }
 }
 

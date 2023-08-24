@@ -1,10 +1,6 @@
 .hero {
     position: relative;
 
-    @include vp-1200 {
-        margin-top: 62px;
-    }
-
     .swiper-pagination-bullets {
         bottom: 45px;
     }
@@ -23,6 +19,10 @@
 
 .hero__slider {
     height: 100vh;
+
+    @include vp-1200 {
+        height: 380px;
+    }
 }
 
 .hero__item {
@@ -32,6 +32,17 @@
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+.hero__item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: #000000, $alpha: 0.3);
+    z-index: 1;
 }
 
 .hero__item img {
@@ -51,14 +62,25 @@
     border-radius: 5px;
     transition: color 0.3s ease-in, background-color 0.3s ease-in;
     z-index: 1;
-    margin-top: 30%;
+    margin-top: 20%;
 
-    @include vp-767 {
-        margin-top: 60%;
+    @include vp-1200 {
+        margin-top: 0;
     }
 }
 
 .hero__link:hover {
     background-color: $color-default-white;
     color: $color-red;
+}
+
+.hero__inner {
+    z-index: 1;
+}
+
+.hero__title {
+    @include adaptiv-value("font-size", 46, 30, 1);
+    z-index: 1;
+    color: #fff;
+    line-height: 1.1;
 }

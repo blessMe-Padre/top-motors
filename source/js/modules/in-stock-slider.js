@@ -13,7 +13,7 @@ const initInStockSlider = () => {
                 el: '.swiper-pagination',
                 clickable: true,
                 renderBullet: function (index, className) {
-                    let bulletTexts = ['Toyota', 'Hyundai', 'KIA', 'Toyota', 'Hyundai', 'KIA'];
+                    let bulletTexts = ['Toyota', 'Lexus', 'Nissan', 'Mazda', 'Honda', 'Subaru'];
                     return '<span class="' + className + '">' + bulletTexts[index] + '</span>';
                 },
             },

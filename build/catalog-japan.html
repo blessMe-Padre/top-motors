@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Top Motors - Автоподбор">
+    <title>Top Motors</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page">
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo logo--mobile">
+                <img src="img/logo-topmotors.png" width="247" height="70" alt="логотип">
+            </div>
+            <button class="toggle-btn" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="logo">
+                        <a class="logo__link" href="/">
+                            <img src="img/logo-topmotors.png" width="247" height="70" alt="логотип">
+                        </a>
+                    </div>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a class="nav__link" href="#">Каталог</a>
+                                <ul class="nav__sub-list">
+                                    <li class="nav__sub-item"><a class="link" href="catalog-japan.html"> Автомобили из
+                                            Японии</a></li>
+                                    <li class="nav__sub-item"><a class="link" href="catalog-korea.html"> Автомобили из
+                                            Кореи</a></li>
+                                    <li class="nav__sub-item"><a class="link" href="catalog-china.html"> Автомобили из
+                                            Китая</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item"><a class="nav__link" data-goto=".page-section-5" href="#">Договор</a>
+                                <ul class="nav__sub-list">
+                                    <li class="nav__sub-item"><a class="link" href="./offer.pdf"
+                                            download="offer.pdf">Скачать договор</a>
+                                    </li>
+                                    <li class="nav__sub-item"><a class="link" href="./offer.pdf"
+                                            target="_blank">Посмотреть договор</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="contact">
+                        <div class="contact__inner">
+                            <a class="contact__link" href="tel:+79246730592">8-924-673-05-92</a>
+                            <a class="contact__link" href="tel:+79145937757">8-914-593-77-57</a>
+                        </div>
+                        <!-- <span> / </span> -->
+                        <a href="#popup" class="popup-link contact__btn">Заказать звонок</a>
+                        <div class="contact__wrapper">
+                            <a class="contact__link" href="mailto:topmotors28@mail.ru">topmotors28@mail.ru</a>
+                            <address class="contact__address">г. Владивосток, ул. Нейбута, 125 ст9</address>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </header>
+        <main>
+            <h1 class="visually-hidden">Top Motors - Автоподбор, замена технических жидкостей, установка сигнализации
+            </h1>
+
+            <section class="first first--bg-4 first--mask">
+                <div class="container container--space-center">
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+                            <li class="breadcrumbs__item"><span> &nbsp;\ &nbsp;</span></li>
+                            <li class="breadcrumbs__item"><span>Японские автомобили</span></li>
+                        </ul>
+                    </div>
+                    <h2 class="first__title wow fadeInUp">Японские автомобили </h2>
+                </div>
+            </section>
+
+            <section class="order _tabs">
+                <div class="container">
+                    <h2 class="title">Автомобили наличии</h2>
+                    <nav class="order__nav">
+                        <button class="order__btn _tabs-item _active">Honda</button>
+                        <button class="order__btn _tabs-item">Mazda</button>
+                        <button class="order__btn _tabs-item">Mitsubishi</button>
+                        <button class="order__btn _tabs-item">Nissan</button>
+                    </nav>
+                    <div class="order__block _tabs-block _active">
+                        <div class="order__buttons">
+                            <button class="order__btn-1" type="button" data-filter=".category-a">Седан</button>
+                            <button class="order__btn-1" type="button" data-filter=".category-b">Кроссовер</button>
+                            <button class="order__btn-1" type="button" data-filter=".category-c">Гибриды</button>
+                            <button class="order__btn-1" type="button" data-filter=".category-d">Хетчбэки</button>
+                            <button class="order__btn-1" type="button" data-filter=".category-f">Выбрать все</button>
+                        </div>
+
+                        <div class="container-filter order__wrapper">
+                            <div class="mix category-a category-f" data-order="1">
+                                <article class="car">
+                                    <div class="car__pictures">
+                                        <picture>
+                                            <source
+                                                srcset="img/content/cars/image-1@1x.webp 1x, img/content/cars/image-1@2x.webp 2x"
+                                                type="image/webp">
+                                            <!-- 1х: 295px; 2x: 590px -->
+                                            <img loading="lasy" src="img/content/cars/image-1@1x.jpg"
+                                                srcset="img/content/cars/image-1@2x.jpg 2x" width="295" height="220"
+                                                alt="авто">
+                                        </picture>
+                                    </div>
+                                    <div class="car__description">
+                                        <h3>Название машины</h3>
+                                        <p class="car__description-cost">от 10 000 000 р.</p>
+                                        <div class="car__description-wrapper">
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Год</div>
+                                                <div class="car__description-item">2022г</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Пробег, км</div>
+                                                <div class="car__description-item">8 800</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Топливо</div>
+                                                <div class="car__description-item">Дизель</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Двигатель</div>
+                                                <div class="car__description-item">3л. (270 л.с.)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="mix category-a category-f" data-order="2">
+                                <article class="car">
+                                    <div class="car__pictures">
+                                        <picture>
+                                            <source
+                                                srcset="img/content/cars/image-1@1x.webp 1x, img/content/cars/image-1@2x.webp 2x"
+                                                type="image/webp">
+                                            <!-- 1х: 295px; 2x: 590px -->
+                                            <img loading="lasy" src="img/content/cars/image-1@1x.jpg"
+                                                srcset="img/content/cars/image-1@2x.jpg 2x" width="295" height="220"
+                                                alt="авто">
+                                        </picture>
+                                    </div>
+                                    <div class="car__description">
+                                        <h3>Название машины</h3>
+                                        <p class="car__description-cost">от 10 000 000 р.</p>
+                                        <div class="car__description-wrapper">
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Год</div>
+                                                <div class="car__description-item">2022г</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Пробег, км</div>
+                                                <div class="car__description-item">8 800</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Топливо</div>
+                                                <div class="car__description-item">Дизель</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Двигатель</div>
+                                                <div class="car__description-item">3л. (270 л.с.)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="mix category-a category-f" data-order="3">
+                                <article class="car">
+                                    <div class="car__pictures">
+                                        <picture>
+                                            <source
+                                                srcset="img/content/cars/image-1@1x.webp 1x, img/content/cars/image-1@2x.webp 2x"
+                                                type="image/webp">
+                                            <!-- 1х: 295px; 2x: 590px -->
+                                            <img loading="lasy" src="img/content/cars/image-1@1x.jpg"
+                                                srcset="img/content/cars/image-1@2x.jpg 2x" width="295" height="220"
+                                                alt="авто">
+                                        </picture>
+                                    </div>
+                                    <div class="car__description">
+                                        <h3>Название машины</h3>
+                                        <p class="car__description-cost">от 10 000 000 р.</p>
+                                        <div class="car__description-wrapper">
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Год</div>
+                                                <div class="car__description-item">2022г</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Пробег, км</div>
+                                                <div class="car__description-item">8 800</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Топливо</div>
+                                                <div class="car__description-item">Дизель</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Двигатель</div>
+                                                <div class="car__description-item">3л. (270 л.с.)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="mix category-a category-f" data-order="4">
+                                <article class="car">
+                                    <div class="car__pictures">
+                                        <picture>
+                                            <source
+                                                srcset="img/content/cars/image-1@1x.webp 1x, img/content/cars/image-1@2x.webp 2x"
+                                                type="image/webp">
+                                            <!-- 1х: 295px; 2x: 590px -->
+                                            <img loading="lasy" src="img/content/cars/image-1@1x.jpg"
+                                                srcset="img/content/cars/image-1@2x.jpg 2x" width="295" height="220"
+                                                alt="авто">
+                                        </picture>
+                                    </div>
+                                    <div class="car__description">
+                                        <h3>Название машины</h3>
+                                        <p class="car__description-cost">от 10 000 000 р.</p>
+                                        <div class="car__description-wrapper">
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Год</div>
+                                                <div class="car__description-item">2022г</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Пробег, км</div>
+                                                <div class="car__description-item">8 800</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Топливо</div>
+                                                <div class="car__description-item">Дизель</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Двигатель</div>
+                                                <div class="car__description-item">3л. (270 л.с.)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="mix category-a category-f" data-order="5">
+                                <article class="car">
+                                    <div class="car__pictures">
+                                        <picture>
+                                            <source
+                                                srcset="img/content/cars/image-1@1x.webp 1x, img/content/cars/image-1@2x.webp 2x"
+                                                type="image/webp">
+                                            <!-- 1х: 295px; 2x: 590px -->
+                                            <img loading="lasy" src="img/content/cars/image-1@1x.jpg"
+                                                srcset="img/content/cars/image-1@2x.jpg 2x" width="295" height="220"
+                                                alt="авто">
+                                        </picture>
+                                    </div>
+                                    <div class="car__description">
+                                        <h3>Название машины</h3>
+                                        <p class="car__description-cost">от 10 000 000 р.</p>
+                                        <div class="car__description-wrapper">
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Год</div>
+                                                <div class="car__description-item">2022г</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Пробег, км</div>
+                                                <div class="car__description-item">8 800</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Топливо</div>
+                                                <div class="car__description-item">Дизель</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Двигатель</div>
+                                                <div class="car__description-item">3л. (270 л.с.)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="mix category-b category-f" data-order="6">
+                                <article class="car">
+                                    <div class="car__pictures">
+                                        <picture>
+                                            <source
+                                                srcset="img/content/cars/image-1@1x.webp 1x, img/content/cars/image-1@2x.webp 2x"
+                                                type="image/webp">
+                                            <!-- 1х: 295px; 2x: 590px -->
+                                            <img loading="lasy" src="img/content/cars/image-1@1x.jpg"
+                                                srcset="img/content/cars/image-1@2x.jpg 2x" width="295" height="220"
+                                                alt="авто">
+                                        </picture>
+                                    </div>
+                                    <div class="car__description">
+                                        <h3>Название машины</h3>
+                                        <p class="car__description-cost">от 10 000 000 р.</p>
+                                        <div class="car__description-wrapper">
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Год</div>
+                                                <div class="car__description-item">2022г</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Пробег, км</div>
+                                                <div class="car__description-item">8 800</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Топливо</div>
+                                                <div class="car__description-item">Дизель</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Двигатель</div>
+                                                <div class="car__description-item">3л. (270 л.с.)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="mix category-c category-f" data-order="7">
+                                <article class="car">
+                                    <div class="car__pictures">
+                                        <picture>
+                                            <source
+                                                srcset="img/content/cars/image-1@1x.webp 1x, img/content/cars/image-1@2x.webp 2x"
+                                                type="image/webp">
+                                            <!-- 1х: 295px; 2x: 590px -->
+                                            <img loading="lasy" src="img/content/cars/image-1@1x.jpg"
+                                                srcset="img/content/cars/image-1@2x.jpg 2x" width="295" height="220"
+                                                alt="авто">
+                                        </picture>
+                                    </div>
+                                    <div class="car__description">
+                                        <h3>Название машины</h3>
+                                        <p class="car__description-cost">от 10 000 000 р.</p>
+                                        <div class="car__description-wrapper">
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Год</div>
+                                                <div class="car__description-item">2022г</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Пробег, км</div>
+                                                <div class="car__description-item">8 800</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Топливо</div>
+                                                <div class="car__description-item">Дизель</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Двигатель</div>
+                                                <div class="car__description-item">3л. (270 л.с.)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="mix category-c category-f" data-order="8">
+                                <article class="car">
+                                    <div class="car__pictures">
+                                        <picture>
+                                            <source
+                                                srcset="img/content/cars/image-1@1x.webp 1x, img/content/cars/image-1@2x.webp 2x"
+                                                type="image/webp">
+                                            <!-- 1х: 295px; 2x: 590px -->
+                                            <img loading="lasy" src="img/content/cars/image-1@1x.jpg"
+                                                srcset="img/content/cars/image-1@2x.jpg 2x" width="295" height="220"
+                                                alt="авто">
+                                        </picture>
+                                    </div>
+                                    <div class="car__description">
+                                        <h3>Название машины</h3>
+                                        <p class="car__description-cost">от 10 000 000 р.</p>
+                                        <div class="car__description-wrapper">
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Год</div>
+                                                <div class="car__description-item">2022г</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Пробег, км</div>
+                                                <div class="car__description-item">8 800</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Топливо</div>
+                                                <div class="car__description-item">Дизель</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Двигатель</div>
+                                                <div class="car__description-item">3л. (270 л.с.)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="mix category-c category-f" data-order="9">
+                                <article class="car">
+                                    <div class="car__pictures">
+                                        <picture>
+                                            <source
+                                                srcset="img/content/cars/image-1@1x.webp 1x, img/content/cars/image-1@2x.webp 2x"
+                                                type="image/webp">
+                                            <!-- 1х: 295px; 2x: 590px -->
+                                            <img loading="lasy" src="img/content/cars/image-1@1x.jpg"
+                                                srcset="img/content/cars/image-1@2x.jpg 2x" width="295" height="220"
+                                                alt="авто">
+                                        </picture>
+                                    </div>
+                                    <div class="car__description">
+                                        <h3>Название машины</h3>
+                                        <p class="car__description-cost">от 10 000 000 р.</p>
+                                        <div class="car__description-wrapper">
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Год</div>
+                                                <div class="car__description-item">2022г</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Пробег, км</div>
+                                                <div class="car__description-item">8 800</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Топливо</div>
+                                                <div class="car__description-item">Дизель</div>
+                                            </div>
+                                            <div class="car__description-row">
+                                                <div class="car__description-item">Двигатель</div>
+                                                <div class="car__description-item">3л. (270 л.с.)</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order__block _tabs-block">
+                        <ul class="order__list">
+                            <li class="order__item">
+                                <div class="order__item-img">
+                                    <img loading="lasy" src="./img/content/car-2.jpg" alt="">
+                                </div>
+                                <p class="order__item-name">название</p>
+                            </li>
+                            <li class="order__item">
+                                <div class="order__item-img">
+                                    <img loading="lasy" src="./img/content/car-2.jpg" alt="">
+                                </div>
+                                <p class="order__item-name">название</p>
+                            </li>
+                            <li class="order__item">
+                                <div class="order__item-img">
+                                    <img loading="lasy" src="./img/content/car-2.jpg" alt="">
+                                </div>
+                                <p class="order__item-name">название</p>
+                            </li>
+                            <li class="order__item">
+                                <div class="order__item-img">
+                                    <img loading="lasy" src="./img/content/car-2.jpg" alt="">
+                                </div>
+                                <p class="order__item-name">название</p>
+                            </li>
+                            <li class="order__item">
+                                <div class="order__item-img">
+                                    <img loading="lasy" src="./img/content/car-2.jpg" alt="">
+                                </div>
+                                <p class="order__item-name">название</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="order__block _tabs-block">
+                        <ul class="order__list">
+                            <li class="order__item">
+                                <div class="order__item-img">
+                                    <img loading="lasy" src="./img/content/car-2.jpg" alt="">
+                                </div>
+                                <p class="order__item-name">название</p>
+                            </li>
+                            <li class="order__item">
+                                <div class="order__item-img">
+                                    <img loading="lasy" src="./img/content/car-2.jpg" alt="">
+                                </div>
+                                <p class="order__item-name">название</p>
+                            </li>
+                            <li class="order__item">
+                                <div class="order__item-img">
+                                    <img loading="lasy" src="./img/content/car-2.jpg" alt="">
+                                </div>
+                                <p class="order__item-name">название</p>
+                            </li>
+                            <li class="order__item">
+                                <div class="order__item-img">
+                                    <img loading="lasy" src="./img/content/car-2.jpg" alt="">
+                                </div>
+                                <p class="order__item-name">название</p>
+                            </li>
+                            <li class="order__item">
+                                <div class="order__item-img">
+                                    <img loading="lasy" src="./img/content/car-2.jpg" alt="">
+                                </div>
+                                <p class="order__item-name">название</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="order__block _tabs-block">
+                        <ul class="order__list">
+                            <li class="order__item">
+                                <div class="order__item-img">
+                                    <img loading="lasy" src="./img/content/car-2.jpg" alt="">
+                                </div>
+                                <p class="order__item-name">название</p>
+                            </li>
+                            <li class="order__item">
+                                <div class="order__item-img">
+                                    <img loading="lasy" src="./img/content/car-2.jpg" alt="">
+                                </div>
+                                <p class="order__item-name">название</p>
+                            </li>
+                            <li class="order__item">
+                                <div class="order__item-img">
+                                    <img loading="lasy" src="./img/content/car-2.jpg" alt="">
+                                </div>
+                                <p class="order__item-name">название</p>
+                            </li>
+                            <li class="order__item">
+                                <div class="order__item-img">
+                                    <img loading="lasy" src="./img/content/car-2.jpg" alt="">
+                                </div>
+                                <p class="order__item-name">название</p>
+                            </li>
+                            <li class="order__item">
+                                <div class="order__item-img">
+                                    <img loading="lasy" src="./img/content/car-2.jpg" alt="">
+                                </div>
+                                <p class="order__item-name">название</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <div class="container">
+                <div class="content-form">
+                    <section class="form-section  wow fadeInUp">
+                        <div class="form-wrapper">
+                            <form action="#" id="form" class="form__body validate-form">
+                                <h2 class="form__title">заказать автомобиль</h2>
+                                <p class="form__sub-title">Заполните форму и мы свяжемся с вами с ближайшее время
+                                </p>
+
+                                <div class="form-inner">
+                                    <div class="form__item">
+                                        <input id="formName" type="text" name="name" class="form__input _req"
+                                            placeholder="Ваше имя">
+                                    </div>
+
+                                    <div class="form__item">
+                                        <input id="formPhone" type="tel" name="phone" class="form__input _req"
+                                            placeholder="Ваш телефон">
+                                    </div>
+
+                                    <div class="form__item">
+                                        <input name="message" id="formMessage" class="form__input"
+                                            placeholder="Модель"></input>
+                                    </div>
+
+                                    <button type="submit" class="form__button">Заказать звонок</button>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div id="popup" class="popup">
+                <div class="popup__body">
+                    <div class="popup__content">
+                        <a href="#header" class="popup__close close-popup">
+                            <img loading="lasy" src="img/close.svg" alt="закрыть">
+                        </a>
+                        <div class="popup-form">
+                            <section class="form-section">
+                                <div class="form-wrapper">
+                                    <form action="#" id="form" class="form__body validate-form">
+                                        <h2 class="form__title">Понравился автомобиль?</h2>
+                                        <p class="form__sub-title">Оставьте заявку, и мы предоставим вам полную
+                                            информацию о понравившемся авто</p>
+
+                                        <div class="form-inner">
+                                            <div class="form__item">
+                                                <input id="formName" type="text" name="name" class="form__input _req"
+                                                    placeholder="Ваше имя">
+                                            </div>
+
+                                            <div class="form__item">
+                                                <input id="formPhone" type="tel" name="phone" class="form__input _req"
+                                                    placeholder="Ваш телефон">
+                                            </div>
+
+                                            <button type="submit" class="form__button">Оставить заявку</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__wrapper">
+                    <nav class="footer__nav">
+                        <div class="footer__logo">
+                            <img loading="lasy" src="img/logo.png" alt="логотип" width="125" height="32">
+                        </div>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a class="link" href="#">Авто в наличии</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="link" href="#">Варианты доставки</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="link" href="#">Этапы работы</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="link" href="#">Услуги</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="link" href="#">О нас</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="footer__info">
+                        <p class="wow fadeInRight" data-wow-delay="0.2s">г. Владивосток, ул. Уткинская 9</p>
+                        <a class="link wow fadeInRight" data-wow-delay="0.4s" href="tel:+79999999999">+7 (999) 999 - 99
+                            - 99</a>
+                        <a class="link wow fadeInRight" data-wow-delay="0.6s"
+                            href="mailto:info@gmail.com">info@gmail.com</a>
+                        <p class="wow fadeInRight" data-wow-delay="0.8s">ООО «ТОП МОТОРС» ИНН: 6438886529 ОГРН:
+                            9735330397309</p>
+                        <p class="footer__info-right wow fadeInRight" data-wow-delay="1s">© 2023 TOP MOTORS. Все права
+                            защищены</p>
+                    </div>
+                </div>
+                <div class="footer__form">
+                    <section class="form-section">
+                        <div class="form-wrapper">
+                            <form action="#" id="form" class="form__body validate-form">
+                                <h3 class="form__title">Остались вопросы?</h3>
+                                <p>Заполните форму ниже и&nbsp;мы&nbsp;свяжемся с&nbsp;вами</p>
+                                <div class="form__item">
+                                    <input id="formName" type="text" name="name" class="form__input _req"
+                                        placeholder="Ваше имя">
+                                </div>
+
+                                <div class="form__item">
+                                    <input id="formPhone" type="tel" name="phone" class="form__input _req"
+                                        placeholder="Ваш телефон">
+                                </div>
+
+                                <button type="submit" class="form__button">Заказать звонок</button>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <div class="scroll-top">
+        <img loading="lasy" src="img/up-arrow.svg" alt="стрелка вверх">
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

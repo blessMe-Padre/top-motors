@@ -14,14 +14,14 @@
   <div class="wrapper">
     <header class="header">
       <div class="logo logo--mobile">
-        <img src="img/logo.png" width="125" height="30" alt="логотип">
+        <img src="img/logo-topmotors.png" width="247" height="70" alt="логотип">
       </div>
       <button class="toggle-btn" aria-label="Открыть меню" aria-expanded="false"><span></span></button>
       <div class="container">
         <div class="header__wrapper">
           <div class="logo">
             <a class="logo__link" href="#">
-              <img src="img/logo.png" width="125" height="30" alt="логотип">
+              <img src="img/logo-topmotors.png" width="247" height="70" alt="логотип">
             </a>
           </div>
           <nav class="nav">
@@ -29,23 +29,34 @@
               <li class="nav__item"><a class="nav__link" data-goto=".page-section-1" href="#">Авто в наличии</a></li>
               <li class="nav__item"><a class="nav__link" href="#">Каталог</a>
                 <ul class="nav__sub-list">
-                  <li class="nav__sub-item"><a class="link" href="catalog.html"> Автомобили из Японии</a></li>
-                  <li class="nav__sub-item"><a class="link" href="catalog.html"> Автомобили из Японии</a></li>
-                  <li class="nav__sub-item"><a class="link" href="catalog.html"> Автомобили из Японии</a></li>
+                  <li class="nav__sub-item"><a class="link" href="catalog-japan.html"> Автомобили из Японии</a></li>
+                  <li class="nav__sub-item"><a class="link" href="catalog-korea.html"> Автомобили из Кореи</a></li>
+                  <li class="nav__sub-item"><a class="link" href="catalog-china.html"> Автомобили из Китая</a></li>
                 </ul>
               </li>
               <li class="nav__item"><a class="nav__link" data-goto=".page-section-2" href="#">Варианты доставки</a></li>
               <li class="nav__item"><a class="nav__link" data-goto=".page-section-3" href="#">Этапы работ</a></li>
               <li class="nav__item"><a class="nav__link" data-goto=".page-section-4" href="#">Услуги</a></li>
-              <li class="nav__item"><a class="nav__link" data-goto=".page-section-5" href="#">О нас</a></li>
+              <li class="nav__item"><a class="nav__link" data-goto=".page-section-5" href="#">Договор</a>
+                <ul class="nav__sub-list">
+                  <li class="nav__sub-item"><a class="link" href="./offer.pdf" download="offer.pdf">Скачать договор</a>
+                  </li>
+                  <li class="nav__sub-item"><a class="link" href="./offer.pdf" target="_blank">Посмотреть договор</a>
+                  </li>
+                </ul>
+              </li>
             </ul>
           </nav>
           <div class="contact">
-            <a class="contact__link" href="tel:+74232028980">+7(423) 202-89-80</a>
+            <div class="contact__inner">
+              <a class="contact__link" href="tel:+79246730592">8-924-673-05-92</a>
+              <a class="contact__link" href="tel:+79145937757">8-914-593-77-57</a>
+            </div>
+            <!-- <span> / </span> -->
             <a href="#popup" class="popup-link contact__btn">Заказать звонок</a>
             <div class="contact__wrapper">
-              <a class="contact__link" href="mailto:info@amoprost.ru">почта@нашапочта.ru</a>
-              <address class="contact__address">г. Владивосток, Уткинская 9, офис "Inside 360"</address>
+              <a class="contact__link" href="mailto:topmotors28@mail.ru">topmotors28@mail.ru</a>
+              <address class="contact__address">г. Владивосток, ул. Нейбута, 125 ст9</address>
             </div>
           </div>
 
@@ -60,60 +71,33 @@
         <div class="hero__slider slider">
           <div class="hero__wrapper swiper-wrapper">
             <div class="hero__item swiper-slide">
-              <img src="img/content/hero-1.jpg" alt="япония">
-              <a class="hero__link" href="catalog.html">перейти в каталог</a>
+              <picture>
+                <source srcset="img/content/main/1515.webp" type="image/webp">
+                <img src="img/content/main/1515.jpg" width="100%" height="100%" alt="japan">
+              </picture>
+              <p class="hero__title">Автомобили из Японии</p>
+              <a class="hero__link" href="catalog-japan.html">перейти в каталог</a>
             </div>
             <div class="hero__item swiper-slide">
-              <h2>Корея</h2>
-              <p>Автомобили из Корея</p>
+              <picture>
+                <source srcset="img/content/main/hyundai.webp" type="image/webp">
+                <img src="img/content/main/hyundai.jpg" width="100%" height="100%" alt="hyundai">
+              </picture>
+              <p class="hero__title">Автомобили из Кореи</p>
+              <a class="hero__link" href="catalog-korea.html">перейти в каталог</a>
             </div>
             <div class="hero__item swiper-slide">
-              <h2>Китай</h2>
-              <p>Автомобили из Китая</p>
+              <picture>
+                <source srcset="img/content/main/korea.webp" type="image/webp">
+                <img src="img/content/main/korea.jpg" width="100%" height="100%" alt="korea">
+              </picture>
+              <p class="hero__title">Автомобили из Китая</p>
+              <a class="hero__link" href="catalog-china.html">перейти в каталог</a>
             </div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
       </section>
-
-      <!-- <section class="exclusive wow fadeInUp">
-        <h2 class="title title--white">Почему выбирают нас?</h2>
-        <div class="container">
-          <div class="exclusive__slider">
-            <div class="exclusive__wrapper swiper-wrapper">
-              <div class="exclusive__item wow fadeInUp swiper-slide" data-wow-delay="0.2s">
-                <div class="exclusive__item-block">
-                  <img src="img/svg/exclusive-1.1.svg" width="270" height="250" alt="icon">
-                  <h3>Бесплатная стоянка</h3>
-                  <p>Для наших клиентов всегда зарезервировано бесплатное место на ярде</p>
-                </div>
-              </div>
-              <div class="exclusive__item wow fadeInUp swiper-slide" data-wow-delay="0.4s">
-                <div class="exclusive__item-block">
-                  <img src="img/svg/exclusive-2.svg" width="100" height="100" alt="icon">
-                  <h3>Минимальная предоплата</h3>
-                  <p>Первый платеж по договору у нас составляет</p>
-                </div>
-              </div>
-              <div class="exclusive__item wow fadeInUp swiper-slide" data-wow-delay="0.6s">
-                <div class="exclusive__item-block">
-                  <img src="img/svg/exclusive-3.svg" width="100" height="100" alt="icon">
-                  <h3>Страхование рисков</h3>
-                  <p>Мы защищаем интересны своих клиентов и компенсируем ущерб в любых непредвиденных ситуациях.
-                  </p>
-                </div>
-              </div>
-              <div class="exclusive__item wow fadeInUp swiper-slide" data-wow-delay="0.8s">
-                <div class="exclusive__item-block">
-                  <img src="img/svg/exclusive-4.svg" width="100" height="100" alt="icon">
-                  <h3>Дополнительные услуги</h3>
-                  <p>Мы можем положить дополнительно в автомобиль различные запчасти и прочие вещи из Японии.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
 
       <section class="skills wow fadeInUp">
         <div class="container">
@@ -122,26 +106,27 @@
             <div class="skills-card wow fadeInUp" data-wow-delay="0.2s" tabindex="0">
               <div class="face face1">
                 <div class="content1">
-                  <h3>Бесплатная стоянка</h3>
-                  <img src="img/content/skills/image-1.jpg" width="260" height="200" alt="доставка">
+                  <h3>Консультации и поддержка</h3>
+                  <img src="img/content/skills/100.jpg" width="260" height="200" alt="доставка">
                 </div>
               </div>
               <div class="face face2">
                 <div class="content1">
-                  <p>Для наших клиентов всегда зарезервировано бесплатное место на ярде</p>
+                  <p>Проверка авто перед покупкой.
+                    Полный и быстрый перевод аукционных листов. Фотоотчет на каждом этапе поставки</p>
                 </div>
               </div>
             </div>
             <div class="skills-card wow fadeInUp" data-wow-delay="0.4s" tabindex="0">
               <div class="face face1">
                 <div class="content1">
-                  <h3>Минимальная предоплата</h3>
+                  <h3>Финансовые гарантии</h3>
                   <img src="img/content/skills/image-2.png" width="260" height="200" alt="доставка">
                 </div>
               </div>
               <div class="face face2">
                 <div class="content1">
-                  <p>Первый платеж по договору у нас составляет 50 000р</p>
+                  <p>Прозрачное ценообразование без скрытых комиссий. Предоплата по договору составляет 50 000р</p>
                 </div>
               </div>
             </div>
@@ -161,15 +146,13 @@
             <div class="skills-card wow fadeInUp" data-wow-delay="0.8s" tabindex="0">
               <div class="face face1">
                 <div class="content1">
-                  <h3>Дополнительные услуги</h3>
-                  <img src="img/content/skills/image-4.jpg" width="260" height="200" alt="доставка">
+                  <h3>Доставка по всех России</h3>
+                  <img src="img/content/skills/101.jpg" width="260" height="200" alt="доставка">
                 </div>
               </div>
               <div class="face face2">
                 <div class="content1">
-                  <p>
-                    Мы можем положить дополнительно в автомобиль различные запчасти и прочие вещи из Японии.
-                  </p>
+                  <p>Отправка вашего автомобиля в любой регион России.</p>
                 </div>
               </div>
             </div>
@@ -180,7 +163,7 @@
       <section class="in-stock page-section-1 wow fadeInUp">
         <div class="container">
 
-          <h2 class="title title-white">Машины в наличии</h2>
+          <h2 class="title title-white">Автомобили в наличии</h2>
 
           <div class="in-stock__wrapper">
             <div class="in-stock__slider">
@@ -190,7 +173,7 @@
               </div>
               <div class="in-stock__wrapper swiper-wrapper">
                 <div class="in-stock__item swiper-slide">
-                  <img src="img/content/in-stock/image-1.jpg" width="830" height="620" alt="авто">
+                  <img src="img/content/in-stock/land.jpg" width="830" height="620" alt="авто">
                   <div class="load-more">
                     <a class="load-more__btn load-more__btn-one" href="catalog.html">
                       <span>перейти в каталог</span>
@@ -198,7 +181,7 @@
                   </div>
                 </div>
                 <div class="in-stock__item swiper-slide">
-                  <img src="img/content/in-stock/image-1.jpg" width="830" height="620" alt="авто">
+                  <img src="img/content/in-stock/10-1.jpg" width="830" height="620" alt="авто">
                   <div class="load-more">
                     <a class="load-more__btn load-more__btn-one" href="catalog.html">
                       <span>перейти в каталог</span>
@@ -206,7 +189,7 @@
                   </div>
                 </div>
                 <div class="in-stock__item swiper-slide">
-                  <img src="img/content/in-stock/image-1.jpg" width="830" height="620" alt="авто">
+                  <img src="img/content/in-stock/nissan-zhuk.jpg" width="830" height="620" alt="авто">
                   <div class="load-more">
                     <a class="load-more__btn load-more__btn-one" href="catalog.html">
                       <span>перейти в каталог</span>
@@ -214,7 +197,7 @@
                   </div>
                 </div>
                 <div class="in-stock__item swiper-slide">
-                  <img src="img/content/in-stock/image-1.jpg" width="830" height="620" alt="авто">
+                  <img src="img/content/in-stock/mazda.jpg" width="830" height="620" alt="авто">
                   <div class="load-more">
                     <a class="load-more__btn load-more__btn-one" href="catalog.html">
                       <span>перейти в каталог</span>
@@ -222,7 +205,7 @@
                   </div>
                 </div>
                 <div class="in-stock__item swiper-slide">
-                  <img src="img/content/in-stock/image-1.jpg" width="830" height="620" alt="авто">
+                  <img src="img/content/in-stock/honda.jpg" width="830" height="620" alt="авто">
                   <div class="load-more">
                     <a class="load-more__btn load-more__btn-one" href="catalog.html">
                       <span>перейти в каталог</span>
@@ -230,7 +213,7 @@
                   </div>
                 </div>
                 <div class="in-stock__item swiper-slide">
-                  <img src="img/content/in-stock/image-1.jpg" width="830" height="620" alt="авто">
+                  <img src="img/content/in-stock/Subaru.jpg" width="830" height="620" alt="авто">
                   <div class="load-more">
                     <a class="load-more__btn load-more__btn-one" href="catalog.html">
                       <span>перейти в каталог</span>
@@ -250,7 +233,7 @@
             <div class="in-stock__slider-reverse">
               <div class="in-stock__row swiper-wrapper">
                 <div class="in-stock__item swiper-slide">
-                  <img src="img/content/in-stock/image-1.jpg" width="830" height="620" alt="авто">
+                  <img src="img/content/in-stock/mercl057.jpg" width="830" height="620" alt="авто">
                   <div class="load-more">
                     <a class="load-more__btn load-more__btn-one" href="catalog.html">
                       <span>перейти в каталог</span>
@@ -258,7 +241,7 @@
                   </div>
                 </div>
                 <div class="in-stock__item swiper-slide">
-                  <img src="img/content/in-stock/image-1.jpg" width="830" height="620" alt="авто">
+                  <img src="img/content/in-stock/bmw.jpg" width="830" height="620" alt="авто">
                   <div class="load-more">
                     <a class="load-more__btn load-more__btn-one" href="catalog.html">
                       <span>перейти в каталог</span>
@@ -266,7 +249,7 @@
                   </div>
                 </div>
                 <div class="in-stock__item swiper-slide">
-                  <img src="img/content/in-stock/image-1.jpg" width="830" height="620" alt="авто">
+                  <img src="img/content/in-stock/audi.webp" width="830" height="620" alt="авто">
                   <div class="load-more">
                     <a class="load-more__btn load-more__btn-one" href="catalog.html">
                       <span>перейти в каталог</span>
@@ -274,7 +257,7 @@
                   </div>
                 </div>
                 <div class="in-stock__item swiper-slide">
-                  <img src="img/content/in-stock/image-1.jpg" width="830" height="620" alt="авто">
+                  <img src="img/content/in-stock/palisade.webp" width="830" height="620" alt="авто">
                   <div class="load-more">
                     <a class="load-more__btn load-more__btn-one" href="catalog.html">
                       <span>перейти в каталог</span>
@@ -282,7 +265,7 @@
                   </div>
                 </div>
                 <div class="in-stock__item swiper-slide">
-                  <img src="img/content/in-stock/image-1.jpg" width="830" height="620" alt="авто">
+                  <img src="img/content/in-stock/kia2.jpg" width="830" height="620" alt="авто">
                   <div class="load-more">
                     <a class="load-more__btn load-more__btn-one" href="catalog.html">
                       <span>перейти в каталог</span>
@@ -290,7 +273,7 @@
                   </div>
                 </div>
                 <div class="in-stock__item swiper-slide">
-                  <img src="img/content/in-stock/image-1.jpg" width="830" height="620" alt="авто">
+                  <img src="img/content/in-stock/Ssangyong.jpg" width="830" height="620" alt="авто">
                   <div class="load-more">
                     <a class="load-more__btn load-more__btn-one" href="catalog.html">
                       <span>перейти в каталог</span>
@@ -307,7 +290,7 @@
       <section class="steps page-section-3 wow fadeInUp">
         <div class="container">
           <h2 class="title title--white">Этапы работы</h2>
-          <img class="steps__img" src="img/bg/sakura-2.webp" alt="сакура">
+          <img class="steps__img" src="img/bg/2.webp" alt="сакура">
           <div class="steps__wrapper">
             <div class="steps__numbers">
               <div class="steps__progress">
@@ -338,41 +321,33 @@
           </div>
           <ul class="steps__list">
             <li class="steps__item wow fadeInUp" data-wow-delay="1.4s">
-              <p class="steps__item-title">Заключение договора</p>
-              <p class="steps__item-text">Прописываем характеристики и конечную стоимость</p>
+              <p class="steps__item-title">Заявка</p>
+              <p class="steps__item-text">Вы делаете заявку на сайте или по телефону</p>
             </li>
             <li class="steps__item">
-              <p class="steps__item-title">Предоплата</p>
-              <p class="steps__item-text">Вы вносите депозит от 55.000 руб. (входит в конечную стоимость авто)</p>
+              <p class="steps__item-title">Договор</p>
+              <p class="steps__item-text">Заключение договора</p>
             </li>
             <li class="steps__item">
-              <p class="steps__item-title">Подбираем автомобиль</p>
-              <p class="steps__item-text">Подбираем для вас варианты (с подробным описанием и фото) на автоаукционах.
+              <p class="steps__item-title">Депозит</p>
+              <p class="steps__item-text">Вносите депозит в размере 55 000 рублей (входит в конечную стоимость авто)
               </p>
-
+            </li>
+            <li class="steps__item">
+              <p class="steps__item-title">Поиск автомобиля</p>
+              <p class="steps__item-text">Поиск и выбор автомобиля на аукционе.</p>
             </li>
             <li class="steps__item">
               <p class="steps__item-title">Покупка</p>
-              <p class="steps__item-text">Делаем ставки в рамках вашего бюджета</p>
+              <p class="steps__item-text">Покупка автомобиля на аукционе</p>
             </li>
             <li class="steps__item">
-              <p class="steps__item-title">Оплата</p>
-              <p class="steps__item-text">После покупки, оплачиваете
-                стоимость автомобиля и его
-                доставку из Японии</p>
+              <p class="steps__item-title">Оплата и доставка</p>
+              <p class="steps__item-text">Оплата и доставка автомобиля из Японии, оформление документов</p>
             </li>
             <li class="steps__item">
-              <p class="steps__item-title">Оформление документов</p>
-              <p class="steps__item-text">Мы занимаемся таможенным
-                оформлением и получением
-                документов.</p>
-            </li>
-            <li class="steps__item">
-              <p class="steps__item-title">Растаможка и доставка</p>
-              <p class="steps__item-text">Отправляем транспортной
-                компанией до вашего города. Вносится последняя
-                часть оплаты – расходы
-                за таможенное оформление.</p>
+              <p class="steps__item-title">Получение</p>
+              <p class="steps__item-text">Получение автомобиля и передача заказчику</p>
             </li>
           </ul>
 
@@ -472,94 +447,65 @@
           <h2 class="title">Наши услуги</h2>
           <ul class="services__list">
             <li class="services__item">
-              <a class="services__item-link" href="article-dostavka.html">
-                <div class="services__item-img">
-                  <picture>
-                    <source srcset="img/content/services/image-1@1x.webp 1x, img/content/services/image-1@2x.webp 2x"
-                      type="image/webp">
-                    <!-- 1х: 400px; 2x: 800px -->
-                    <img src="img/content/services/image-1@1x.jpg" srcset="img/content/services/image-1@2x.jpg 2x"
-                      width="400" height="300" alt="авто">
-                  </picture>
-                </div>
-                <h3 class="services__item-title">Доставка автомобиля из любой точки мира</h3>
-                <p class="services__item-text">Исполняем даже самые сложные клиентские запросы, поможем найти как редкую
-                  модель, так и&nbsp;эксклюзивный автомобиль. Оперативно подберём предложения и&nbsp;оптимальные условия
-                  покупки исходя из&nbsp;особенностей ситуации клиента, его географического положения
-                  и&nbsp;предпочтений по&nbsp;форме оплаты.</p>
-              </a>
+              <div class="services__item-img">
+                <picture>
+                  <source srcset="img/content/services/image-1@1x.webp 1x, img/content/services/image-1@2x.webp 2x"
+                    type="image/webp">
+                  <!-- 1х: 400px; 2x: 800px -->
+                  <img src="img/content/services/image-1@1x.jpg" srcset="img/content/services/image-1@2x.jpg 2x"
+                    width="400" height="300" alt="авто">
+                </picture>
+              </div>
+              <h3 class="services__item-title">Заказ и подбор автомобилей</h3>
+              <p class="services__item-text">Исполняем даже самые сложные клиентские запросы, поможем найти как редкую
+                модель, так и&nbsp;эксклюзивный автомобиль. Оперативно подберём предложения и&nbsp;оптимальные условия
+                покупки исходя из&nbsp;особенностей ситуации клиента, его географического положения
+                и&nbsp;предпочтений по&nbsp;форме оплаты.</p>
             </li>
             <li class="services__item">
-              <a class="services__item-link" href="#">
-                <div class="services__item-img">
-                  <picture>
-                    <source srcset="img/content/services/image-1@1x.webp 1x, img/content/services/image-1@2x.webp 2x"
-                      type="image/webp">
-                    <!-- 1х: 400px; 2x: 800px -->
-                    <img src="img/content/services/image-1@1x.jpg" srcset="img/content/services/image-1@2x.jpg 2x"
-                      width="400" height="300" alt="авто">
-                  </picture>
-                </div>
-                <h3 class="services__item-title">Доставка автомобиля из любой точки мира</h3>
-                <p class="services__item-text">Исполняем даже самые сложные клиентские запросы, поможем найти как редкую
-                  модель, так и&nbsp;эксклюзивный автомобиль. Оперативно подберём предложения и&nbsp;оптимальные условия
-                  покупки исходя из&nbsp;особенностей ситуации клиента, его географического положения
-                  и&nbsp;предпочтений по&nbsp;форме оплаты.</p>
-              </a>
+              <div class="services__item-img">
+                <!-- <picture>
+                  <source srcset="img/content/services/image-1@1x.webp 1x, img/content/services/image-1@2x.webp 2x"
+                    type="image/webp">
+                
+                  <img src="img/content/services/image-1@1x.jpg" srcset="img/content/services/image-1@2x.jpg 2x"
+                    width="400" height="300" alt="авто">
+                </picture> -->
+                <img src="img/content/services/bugatti_veyron_2013_photos_2_800x600.jpg" alt="">
+              </div>
+              <h3 class="services__item-title">Растаможка и привоз</h3>
+              <p class="services__item-text">При ввозе товаров из-за границы растаможка играет важную роль. Наша
+                компания предлагает профессиональные услуги в сфере растаможки и привоза товаров, обеспечивая
+                безопасность и надежность процесса.
+
+                Мы осуществляем все необходимые процедуры оформления и выполняем контрольные мероприятия, чтобы
+                гарантировать соблюдение законодательства и правил импорта.
+
+                Наша команда высококвалифицированных специалистов имеет богатый опыт работы с товарами различных
+                категорий, от малогабаритных предметов до крупных грузов. Мы заботимся о каждой детали процесса,
+                осуществляем логистическое планирование и обеспечиваем своевременную доставку товаров.
+              </p>
             </li>
             <li class="services__item">
-              <a class="services__item-link" href="#">
-                <div class="services__item-img">
-                  <picture>
-                    <source srcset="img/content/services/image-1@1x.webp 1x, img/content/services/image-1@2x.webp 2x"
-                      type="image/webp">
-                    <!-- 1х: 400px; 2x: 800px -->
-                    <img src="img/content/services/image-1@1x.jpg" srcset="img/content/services/image-1@2x.jpg 2x"
-                      width="400" height="300" alt="авто">
-                  </picture>
-                </div>
-                <h3 class="services__item-title">Доставка автомобиля из любой точки мира</h3>
-                <p class="services__item-text">Исполняем даже самые сложные клиентские запросы, поможем найти как редкую
-                  модель, так и&nbsp;эксклюзивный автомобиль. Оперативно подберём предложения и&nbsp;оптимальные условия
-                  покупки исходя из&nbsp;особенностей ситуации клиента, его географического положения
-                  и&nbsp;предпочтений по&nbsp;форме оплаты.</p>
-              </a>
-            </li>
-            <li class="services__item">
-              <a class="services__item-link" href="#">
-                <div class="services__item-img">
-                  <picture>
-                    <source srcset="img/content/services/image-1@1x.webp 1x, img/content/services/image-1@2x.webp 2x"
-                      type="image/webp">
-                    <!-- 1х: 400px; 2x: 800px -->
-                    <img src="img/content/services/image-1@1x.jpg" srcset="img/content/services/image-1@2x.jpg 2x"
-                      width="400" height="300" alt="авто">
-                  </picture>
-                </div>
-                <h3 class="services__item-title">Доставка автомобиля из любой точки мира</h3>
-                <p class="services__item-text">Исполняем даже самые сложные клиентские запросы, поможем найти как редкую
-                  модель, так и&nbsp;эксклюзивный автомобиль. Оперативно подберём предложения и&nbsp;оптимальные условия
-                  покупки исходя из&nbsp;особенностей ситуации клиента, его географического положения
-                  и&nbsp;предпочтений по&nbsp;форме оплаты.</p>
-              </a>
-            </li>
-            <li class="services__item">
-              <a class="services__item-link" href="#">
-                <div class="services__item-img">
-                  <picture>
-                    <source srcset="img/content/services/image-1@1x.webp 1x, img/content/services/image-1@2x.webp 2x"
-                      type="image/webp">
-                    <!-- 1х: 400px; 2x: 800px -->
-                    <img src="img/content/services/image-1@1x.jpg" srcset="img/content/services/image-1@2x.jpg 2x"
-                      width="400" height="300" alt="авто">
-                  </picture>
-                </div>
-                <h3 class="services__item-title">Доставка автомобиля из любой точки мира</h3>
-                <p class="services__item-text">Исполняем даже самые сложные клиентские запросы, поможем найти как редкую
-                  модель, так и&nbsp;эксклюзивный автомобиль. Оперативно подберём предложения и&nbsp;оптимальные условия
-                  покупки исходя из&nbsp;особенностей ситуации клиента, его географического положения
-                  и&nbsp;предпочтений по&nbsp;форме оплаты.</p>
-              </a>
+              <div class="services__item-img">
+                <!-- <picture>
+                  <source srcset="img/content/services/image-1@1x.webp 1x, img/content/services/image-1@2x.webp 2x"
+                    type="image/webp">
+                  <img src="img/content/services/image-1@1x.jpg" srcset="img/content/services/image-1@2x.jpg 2x"
+                    width="400" height="300" alt="авто">
+                </picture> -->
+                <img src="img/content/services/XTS-Platinum-Concept.jpg" alt="">
+              </div>
+              <h3 class="services__item-title">Доставка владельцу</h3>
+              <p class="services__item-text">Наши услуги доставки автомобилей по России обеспечивают надежную и
+                безопасную перевозку вашего автомобиля прямо до вашей двери. Мы понимаем, что ваш автомобиль является
+                ценным и важным имуществом, поэтому мы предлагаем профессиональные услуги, чтобы обеспечить его
+                бережную доставку.
+
+                Наша компания имеет обширный опыт в сфере доставки автомобилей и мы работаем с ведущими логистическими
+                партнерами в России. Мы предлагаем широкий спектр услуг, включая организацию транспортировки,
+                координирование логистики и обеспечение надежности доставки.
+              </p>
             </li>
           </ul>
         </div>
@@ -577,26 +523,25 @@
             </li>
             <li class="about__item wow fadeInUp" data-wow-delay="0.6s">
               <p class="about__item-text">
-                Исполняем даже самые сложные клиентские запросы, поможем найти как редкую модель, так
-                и&nbsp;эксклюзивный автомобиль.
+                Проходим полное таможенное оформление в РФ
               </p>
             </li>
             <li class="about__item wow fadeInUp" data-wow-delay="0.8s">
               <p class="about__item-text">
-                Поможем найти как редкую модель, так и&nbsp;эксклюзивный автомобиль. Оперативно подберём предложения
-                и&nbsp;оптимальные условия покупки
+                Берем на себя все заботы о подготовке необходимой документации, установке ГЛОНАСС и получении
+                сертификатов безопасности ТС
               </p>
             </li>
             <li class="about__item wow fadeInUp" data-wow-delay="1s">
               <h3 class="about__item-title">Отзывы о нас</h3>
               <a class="about__item-link" href="#">
-                <img src="img/yandex-logo.svg" alt="yandex" width="120" height="40" style="background-color: #fff;">
+                <img src="img/yandex-logo-1.png" alt="yandex" width="120" height="40">
               </a>
               <a class="about__item-link" href="#">
-                <img src="img/2GIS_logo.svg" alt="2GIS_logo" width="120" height="40">
+                <img src="img/2GIS_logo-1.png" alt="2GIS_logo" width="120" height="40" style="margin-left: -10px;">
               </a>
               <a class="about__item-link" href="#">
-                <img src="img/google-plus.svg" alt="google" width="120" height="40">
+                <img src="img/google-logo-1.png" alt="google" width="180" height="40" style="margin-left: -30px;">
               </a>
             </li>
           </ul>
@@ -667,13 +612,14 @@
               </ul>
             </nav>
             <div class="footer__info">
-              <p class="wow fadeInRight" data-wow-delay="0.2s">г. Владивосток, ул. Уткинская 9</p>
+              <p class="wow fadeInRight" data-wow-delay="0.2s">г. Владивосток, ул. Нейбута, 125 ст9</p>
               <a class="link wow fadeInRight" data-wow-delay="0.4s" href="tel:+79999999999">+7 (999) 999 - 99
                 - 99</a>
-              <a class="link wow fadeInRight" data-wow-delay="0.6s" href="mailto:info@gmail.com">info@gmail.com</a>
-              <p class="wow fadeInRight" data-wow-delay="0.8s">ООО «ТОП МОТОРС» ИНН: 6438886529 ОГРН:
-                9735330397309</p>
-              <p class="footer__info-right wow fadeInRight" data-wow-delay="1s">© 2023 TOP MOTORS. Все права
+              <a class="link wow fadeInRight" data-wow-delay="0.6s"
+                href="mailto:topmotors28@mail.ru">topmotors28@mail.ru</a>
+              <p class="wow fadeInRight" data-wow-delay="0.8s">ИП Мукоед Оксана Викторовна ИНН: 280704887106 ОГРН:
+                319280100024730</p>
+              <p class="footer__info-right wow fadeInRight" data-wow-delay="1s">© 2023 "TOPMOTORS". Все права
                 защищены</p>
             </div>
           </div>
@@ -681,8 +627,11 @@
             <section class="form-section">
               <div class="form-wrapper">
                 <form action="#" id="form" class="form__body validate-form">
-                  <h3 class="form__title">Остались вопросы?</h3>
-                  <p>Заполните форму ниже и&nbsp;мы&nbsp;свяжемся с&nbsp;вами</p>
+                  <h3 class="form__title">Закажите сейчас!</h3>
+                  <p>написать
+                    <a class="footer__whatsapp" href="https://wa.me/89246730592">WhataApp</a>
+                  </p>
+                  <p>или заполните форму ниже и&nbsp;мы&nbsp;свяжемся с&nbsp;вами</p>
                   <div class="form__item">
                     <input id="formName" type="text" name="name" class="form__input _req" placeholder="Ваше имя">
                   </div>
@@ -691,7 +640,7 @@
                     <input id="formPhone" type="tel" name="phone" class="form__input _req" placeholder="Ваш телефон">
                   </div>
 
-                  <button type="submit" class="form__button">Заказать звонок</button>
+                  <button type="submit" class="form__button">Заключить договор</button>
                 </form>
               </div>
             </section>

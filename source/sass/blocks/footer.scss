@@ -11,6 +11,20 @@
   }
 }
 
+.footer__form {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #3e3e3e;
+}
+
+.footer__whatsapp {
+  color: #FFF;
+  padding: 10px 30px;
+  background-color: #c81010;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
 .footer__row {
   display: grid;
   grid-template-columns: 3fr 1fr;
