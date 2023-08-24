@@ -94,3 +94,15 @@
 .nav__sub-item {
   padding: 5px 10px;
 }
+
+.nav__link--red {
+  border: 1px solid #c81010;
+  background-color: #c81010;
+  color: #fff;
+  padding: 7px 10px;
+  border-radius: 5px
+}
+
+.nav__link--red:hover {
+  color: #ffffff;
+}
